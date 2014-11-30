@@ -4354,6 +4354,20 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <junction x="38.1" y="104.14"/>
 </segment>
 </net>
+<net name="A6" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="ADC6"/>
+<wire x1="215.9" y1="139.7" x2="226.06" y2="139.7" width="0.1524" layer="91"/>
+<label x="218.44" y="139.7" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="A7" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="ADC7"/>
+<wire x1="215.9" y1="137.16" x2="226.06" y2="137.16" width="0.1524" layer="91"/>
+<label x="218.44" y="137.16" size="1.778" layer="95"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>
