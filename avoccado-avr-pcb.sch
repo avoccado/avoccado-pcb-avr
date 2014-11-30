@@ -3727,7 +3727,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="GND2" library="SparkFun" deviceset="GND" device=""/>
 <part name="R3" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES" value="2K"/>
 <part name="GND3" library="SparkFun" deviceset="GND" device=""/>
-<part name="D1" library="SparkFun" deviceset="LED" device="0603" value="RED"/>
+<part name="D1" library="SparkFun" deviceset="LED" device="0603" value="CHARGE LED"/>
 <part name="GND15" library="SparkFun" deviceset="GND" device=""/>
 <part name="X1" library="SparkFun" deviceset="USB" device="-MICROB" value="Micro USB"/>
 <part name="C4" library="SparkFun-Capacitors" deviceset="4.7UF-6.3V-10%(0603)" device="0603" value="4.7uF"/>
@@ -3740,10 +3740,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <sheets>
 <sheet>
 <plain>
-<text x="17.78" y="17.78" size="1.778" layer="95">Released under the Creative Commons Attribution Share-Alike 3.0 License</text>
-<text x="17.78" y="15.24" size="1.778" layer="95">http://creativecommons.org/licenses/by-sa/3.0</text>
+<text x="17.78" y="17.78" size="1.778" layer="95">Released under the Creative Commons Attribution Share-Alike 4.0 License</text>
 <text x="17.78" y="10.16" size="1.778" layer="95">Original Arduino Mini Design by Team Arduino</text>
-<text x="17.78" y="7.62" size="1.778" layer="95">Arduino Pro Mini Design by Spark Fun Electronics</text>
+<text x="17.78" y="7.62" size="1.778" layer="95">Original Arduino Pro Mini Design by Spark Fun Electronics</text>
 <text x="2.794" y="179.832" size="1.778" layer="97">microUSB</text>
 </plain>
 <instances>
