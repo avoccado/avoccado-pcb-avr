@@ -3947,7 +3947,7 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <part name="JP9" library="smd-pads" deviceset="M04" device="SMD1X4"/>
 <part name="JP10" library="smd-pads" deviceset="M04" device="SMD1X4"/>
 <part name="JP11" library="smd-pads" deviceset="M04" device="SMD1X4"/>
-<part name="U$1" library="SparkFun-Connectors" deviceset="M04X2" device=""/>
+<part name="NRF24" library="SparkFun-Connectors" deviceset="M04X2" device=""/>
 <part name="GND10" library="SparkFun" deviceset="GND" device=""/>
 <part name="P+2" library="SparkFun" deviceset="3.3V" device="" value="VCC"/>
 <part name="R6" library="SparkFun-Resistors" deviceset="RESISTOR" device="0603" value="68"/>
@@ -4024,7 +4024,7 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <instance part="JP9" gate="G$1" x="71.12" y="26.67"/>
 <instance part="JP10" gate="G$1" x="71.12" y="36.83"/>
 <instance part="JP11" gate="G$1" x="71.12" y="46.99"/>
-<instance part="U$1" gate="G$1" x="203.2" y="69.85"/>
+<instance part="NRF24" gate="G$1" x="203.2" y="69.85"/>
 <instance part="GND10" gate="1" x="177.8" y="71.12"/>
 <instance part="P+2" gate="G$1" x="218.44" y="77.47" smashed="yes">
 <attribute name="VALUE" x="214.884" y="81.026" size="1.778" layer="96"/>
@@ -4147,7 +4147,7 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <wire x1="44.45" y1="68.58" x2="44.45" y2="69.85" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="1"/>
+<pinref part="NRF24" gate="G$1" pin="1"/>
 <wire x1="195.58" y1="74.93" x2="177.8" y2="74.93" width="0.2032" layer="91"/>
 <pinref part="GND10" gate="1" pin="GND"/>
 <wire x1="177.8" y1="74.93" x2="177.8" y2="73.66" width="0.2032" layer="91"/>
@@ -4198,7 +4198,7 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </segment>
 <segment>
 <wire x1="181.61" y1="69.85" x2="195.58" y2="69.85" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="5"/>
+<pinref part="NRF24" gate="G$1" pin="5"/>
 <label x="184.15" y="69.85" size="1.778" layer="95"/>
 </segment>
 </net>
@@ -4217,7 +4217,7 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </segment>
 <segment>
 <wire x1="185.42" y1="67.31" x2="195.58" y2="67.31" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="7"/>
+<pinref part="NRF24" gate="G$1" pin="7"/>
 <label x="184.15" y="67.31" size="1.778" layer="95"/>
 </segment>
 </net>
@@ -4236,7 +4236,7 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </segment>
 <segment>
 <wire x1="210.82" y1="69.85" x2="220.98" y2="69.85" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="6"/>
+<pinref part="NRF24" gate="G$1" pin="6"/>
 <label x="219.71" y="69.85" size="1.778" layer="95"/>
 </segment>
 </net>
@@ -4549,7 +4549,7 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </segment>
 <segment>
 <wire x1="210.82" y1="72.39" x2="220.98" y2="72.39" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="4"/>
+<pinref part="NRF24" gate="G$1" pin="4"/>
 <label x="219.71" y="72.39" size="1.778" layer="95"/>
 </segment>
 </net>
@@ -4639,7 +4639,7 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <segment>
 <pinref part="P+2" gate="G$1" pin="3.3V"/>
 <wire x1="218.44" y1="77.47" x2="218.44" y2="74.93" width="0.2032" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="2"/>
+<pinref part="NRF24" gate="G$1" pin="2"/>
 <wire x1="218.44" y1="74.93" x2="210.82" y2="74.93" width="0.2032" layer="91"/>
 </segment>
 </net>
