@@ -3854,9 +3854,13 @@ Source: avr.lbr</description>
 <sheet>
 <plain>
 <text x="17.78" y="17.78" size="1.778" layer="95">Released under the Creative Commons Attribution Share-Alike 4.0 License</text>
-<text x="17.78" y="10.16" size="1.778" layer="95">Original Arduino Mini Design by Team Arduino</text>
-<text x="17.78" y="7.62" size="1.778" layer="95">Original Arduino Pro Mini Design by Spark Fun Electronics</text>
 <text x="9.144" y="158.242" size="1.778" layer="97">microUSB</text>
+<text x="187.96" y="83.82" size="1.778" layer="91">NRF24L01+ board header SPI (IRQ NC)</text>
+<text x="187.96" y="58.42" size="1.778" layer="91">MPU6050 minimal header I2C (IRQ NC)</text>
+<text x="175.26" y="162.56" size="1.778" layer="91">AtMega 328p</text>
+<text x="175.26" y="259.08" size="1.778" layer="91">AtMega 328p QFN footprint / parallel to the bottom one</text>
+<text x="43.18" y="162.56" size="1.778" layer="91">LiPo 1c charge IC</text>
+<text x="25.4" y="55.88" size="1.778" layer="91">UART/Serial interface (unrouted)</text>
 </plain>
 <instances>
 <instance part="C10" gate="G$1" x="77.47" y="105.41"/>
@@ -3964,17 +3968,13 @@ Source: avr.lbr</description>
 </segment>
 <segment>
 <label x="85.09" y="44.45" size="1.778" layer="95"/>
-<wire x1="64.77" y1="44.45" x2="76.2" y2="44.45" width="0.1524" layer="91"/>
 <pinref part="JP11" gate="G$1" pin="1"/>
 <wire x1="76.2" y1="44.45" x2="90.17" y2="44.45" width="0.1524" layer="91"/>
-<junction x="76.2" y="44.45"/>
 </segment>
 <segment>
 <label x="102.87" y="49.53" size="1.778" layer="95"/>
-<wire x1="130.81" y1="49.53" x2="116.84" y2="49.53" width="0.1524" layer="91"/>
 <pinref part="JP3" gate="G$1" pin="2"/>
 <wire x1="116.84" y1="49.53" x2="102.87" y2="49.53" width="0.1524" layer="91"/>
-<junction x="116.84" y="49.53"/>
 </segment>
 <segment>
 <wire x1="154.94" y1="124.46" x2="154.94" y2="127" width="0.1524" layer="91"/>
@@ -4048,8 +4048,9 @@ Source: avr.lbr</description>
 <wire x1="177.8" y1="74.93" x2="177.8" y2="73.66" width="0.2032" layer="91"/>
 </segment>
 <segment>
-<wire x1="199.39" y1="54.61" x2="194.31" y2="54.61" width="0.1524" layer="91"/>
+<wire x1="199.39" y1="54.61" x2="184.15" y2="54.61" width="0.1524" layer="91"/>
 <pinref part="JP1" gate="G$1" pin="1"/>
+<label x="193.04" y="55.88" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="GND6" gate="1" pin="GND"/>
@@ -4095,10 +4096,8 @@ Source: avr.lbr</description>
 <net name="RESET" class="0">
 <segment>
 <label x="102.87" y="46.99" size="1.778" layer="95"/>
-<wire x1="130.81" y1="46.99" x2="116.84" y2="46.99" width="0.1524" layer="91"/>
 <pinref part="JP3" gate="G$1" pin="3"/>
 <wire x1="116.84" y1="46.99" x2="102.87" y2="46.99" width="0.1524" layer="91"/>
-<junction x="116.84" y="46.99"/>
 </segment>
 <segment>
 <wire x1="167.64" y1="154.94" x2="142.24" y2="154.94" width="0.1524" layer="91"/>
@@ -4115,10 +4114,8 @@ Source: avr.lbr</description>
 <net name="SCK" class="0">
 <segment>
 <label x="102.87" y="31.75" size="1.778" layer="95"/>
-<wire x1="130.81" y1="31.75" x2="116.84" y2="31.75" width="0.1524" layer="91"/>
 <pinref part="JP8" gate="G$1" pin="1"/>
 <wire x1="116.84" y1="31.75" x2="102.87" y2="31.75" width="0.1524" layer="91"/>
-<junction x="116.84" y="31.75"/>
 </segment>
 <segment>
 <wire x1="228.6" y1="96.52" x2="228.6" y2="93.98" width="0.1524" layer="91"/>
@@ -4139,10 +4136,8 @@ Source: avr.lbr</description>
 <net name="MISO" class="0">
 <segment>
 <label x="102.87" y="29.21" size="1.778" layer="95"/>
-<wire x1="130.81" y1="29.21" x2="116.84" y2="29.21" width="0.1524" layer="91"/>
 <pinref part="JP8" gate="G$1" pin="2"/>
 <wire x1="116.84" y1="29.21" x2="102.87" y2="29.21" width="0.1524" layer="91"/>
-<junction x="116.84" y="29.21"/>
 </segment>
 <segment>
 <wire x1="215.9" y1="99.06" x2="226.06" y2="99.06" width="0.1524" layer="91"/>
@@ -4162,10 +4157,8 @@ Source: avr.lbr</description>
 <net name="MOSI" class="0">
 <segment>
 <label x="102.87" y="26.67" size="1.778" layer="95"/>
-<wire x1="130.81" y1="26.67" x2="116.84" y2="26.67" width="0.1524" layer="91"/>
 <pinref part="JP8" gate="G$1" pin="3"/>
 <wire x1="116.84" y1="26.67" x2="102.87" y2="26.67" width="0.1524" layer="91"/>
-<junction x="116.84" y="26.67"/>
 </segment>
 <segment>
 <wire x1="215.9" y1="101.6" x2="226.06" y2="101.6" width="0.1524" layer="91"/>
@@ -4185,10 +4178,8 @@ Source: avr.lbr</description>
 <net name="TXO" class="0">
 <segment>
 <label x="85.09" y="52.07" size="1.778" layer="95"/>
-<wire x1="64.77" y1="52.07" x2="76.2" y2="52.07" width="0.1524" layer="91"/>
 <pinref part="JP11" gate="G$1" pin="4"/>
 <wire x1="76.2" y1="52.07" x2="90.17" y2="52.07" width="0.1524" layer="91"/>
-<junction x="76.2" y="52.07"/>
 </segment>
 <segment>
 <wire x1="215.9" y1="129.54" x2="226.06" y2="129.54" width="0.1524" layer="91"/>
@@ -4213,10 +4204,8 @@ Source: avr.lbr</description>
 </segment>
 <segment>
 <label x="102.87" y="44.45" size="1.778" layer="95"/>
-<wire x1="130.81" y1="44.45" x2="116.84" y2="44.45" width="0.1524" layer="91"/>
 <pinref part="JP3" gate="G$1" pin="4"/>
 <wire x1="116.84" y1="44.45" x2="102.87" y2="44.45" width="0.1524" layer="91"/>
-<junction x="116.84" y="44.45"/>
 </segment>
 <segment>
 <wire x1="64.77" y1="113.03" x2="67.31" y2="113.03" width="0.1524" layer="91"/>
@@ -4255,8 +4244,9 @@ Source: avr.lbr</description>
 <label x="39.37" y="46.99" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="199.39" y1="52.07" x2="194.31" y2="52.07" width="0.1524" layer="91"/>
+<wire x1="199.39" y1="52.07" x2="184.15" y2="52.07" width="0.1524" layer="91"/>
 <pinref part="JP1" gate="G$1" pin="2"/>
+<label x="193.294" y="52.07" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="P+2" gate="G$1" pin="3.3V"/>
@@ -4284,10 +4274,8 @@ Source: avr.lbr</description>
 <net name="D9" class="0">
 <segment>
 <label x="85.09" y="24.13" size="1.778" layer="95"/>
-<wire x1="64.77" y1="24.13" x2="76.2" y2="24.13" width="0.1524" layer="91"/>
 <pinref part="JP9" gate="G$1" pin="1"/>
 <wire x1="76.2" y1="24.13" x2="90.17" y2="24.13" width="0.1524" layer="91"/>
-<junction x="76.2" y="24.13"/>
 </segment>
 <segment>
 <wire x1="215.9" y1="106.68" x2="226.06" y2="106.68" width="0.1524" layer="91"/>
@@ -4308,8 +4296,6 @@ Source: avr.lbr</description>
 <label x="85.09" y="26.67" size="1.778" layer="95"/>
 <wire x1="90.17" y1="26.67" x2="76.2" y2="26.67" width="0.1524" layer="91"/>
 <pinref part="JP9" gate="G$1" pin="2"/>
-<wire x1="76.2" y1="26.67" x2="64.77" y2="26.67" width="0.1524" layer="91"/>
-<junction x="76.2" y="26.67"/>
 </segment>
 <segment>
 <wire x1="215.9" y1="109.22" x2="226.06" y2="109.22" width="0.1524" layer="91"/>
@@ -4332,8 +4318,9 @@ Source: avr.lbr</description>
 <pinref part="U1" gate="G$1" pin="PC5(ADC5/SCL)"/>
 </segment>
 <segment>
-<wire x1="185.42" y1="49.53" x2="199.39" y2="49.53" width="0.1524" layer="91"/>
+<wire x1="182.88" y1="49.53" x2="199.39" y2="49.53" width="0.1524" layer="91"/>
 <pinref part="JP1" gate="G$1" pin="3"/>
+<label x="193.294" y="49.53" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="IC5" gate="G$1" pin="PC5(ADC5/SCL)"/>
@@ -4351,8 +4338,9 @@ Source: avr.lbr</description>
 <pinref part="U1" gate="G$1" pin="PC4(ADC4/SDA)"/>
 </segment>
 <segment>
-<wire x1="185.42" y1="46.99" x2="199.39" y2="46.99" width="0.1524" layer="91"/>
+<wire x1="182.88" y1="46.99" x2="199.39" y2="46.99" width="0.1524" layer="91"/>
 <pinref part="JP1" gate="G$1" pin="4"/>
+<label x="193.294" y="46.99" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="IC5" gate="G$1" pin="PC4(ADC4/SDA)"/>
@@ -4362,10 +4350,8 @@ Source: avr.lbr</description>
 <net name="A3" class="0">
 <segment>
 <label x="102.87" y="41.91" size="1.778" layer="95"/>
-<wire x1="130.81" y1="41.91" x2="116.84" y2="41.91" width="0.1524" layer="91"/>
 <pinref part="JP5" gate="G$1" pin="1"/>
 <wire x1="116.84" y1="41.91" x2="102.87" y2="41.91" width="0.1524" layer="91"/>
-<junction x="116.84" y="41.91"/>
 </segment>
 <segment>
 <wire x1="215.9" y1="147.32" x2="226.06" y2="147.32" width="0.1524" layer="91"/>
@@ -4380,10 +4366,8 @@ Source: avr.lbr</description>
 <net name="A2" class="0">
 <segment>
 <label x="102.87" y="39.37" size="1.778" layer="95"/>
-<wire x1="130.81" y1="39.37" x2="116.84" y2="39.37" width="0.1524" layer="91"/>
 <pinref part="JP5" gate="G$1" pin="2"/>
 <wire x1="116.84" y1="39.37" x2="102.87" y2="39.37" width="0.1524" layer="91"/>
-<junction x="116.84" y="39.37"/>
 </segment>
 <segment>
 <wire x1="215.9" y1="149.86" x2="226.06" y2="149.86" width="0.1524" layer="91"/>
@@ -4398,10 +4382,8 @@ Source: avr.lbr</description>
 <net name="A1" class="0">
 <segment>
 <label x="102.87" y="36.83" size="1.778" layer="95"/>
-<wire x1="130.81" y1="36.83" x2="116.84" y2="36.83" width="0.1524" layer="91"/>
 <pinref part="JP5" gate="G$1" pin="3"/>
 <wire x1="116.84" y1="36.83" x2="102.87" y2="36.83" width="0.1524" layer="91"/>
-<junction x="116.84" y="36.83"/>
 </segment>
 <segment>
 <wire x1="215.9" y1="152.4" x2="226.06" y2="152.4" width="0.1524" layer="91"/>
@@ -4416,10 +4398,8 @@ Source: avr.lbr</description>
 <net name="A0" class="0">
 <segment>
 <label x="102.87" y="34.29" size="1.778" layer="95"/>
-<wire x1="130.81" y1="34.29" x2="116.84" y2="34.29" width="0.1524" layer="91"/>
 <pinref part="JP5" gate="G$1" pin="4"/>
 <wire x1="116.84" y1="34.29" x2="102.87" y2="34.29" width="0.1524" layer="91"/>
-<junction x="116.84" y="34.29"/>
 </segment>
 <segment>
 <wire x1="215.9" y1="154.94" x2="226.06" y2="154.94" width="0.1524" layer="91"/>
@@ -4468,8 +4448,6 @@ Source: avr.lbr</description>
 <label x="85.09" y="36.83" size="1.778" layer="95"/>
 <wire x1="90.17" y1="36.83" x2="76.2" y2="36.83" width="0.1524" layer="91"/>
 <pinref part="JP10" gate="G$1" pin="2"/>
-<wire x1="76.2" y1="36.83" x2="64.77" y2="36.83" width="0.1524" layer="91"/>
-<junction x="76.2" y="36.83"/>
 </segment>
 <segment>
 <wire x1="215.9" y1="121.92" x2="226.06" y2="121.92" width="0.1524" layer="91"/>
@@ -4484,10 +4462,8 @@ Source: avr.lbr</description>
 <net name="D5" class="0">
 <segment>
 <label x="85.09" y="34.29" size="1.778" layer="95"/>
-<wire x1="64.77" y1="34.29" x2="76.2" y2="34.29" width="0.1524" layer="91"/>
 <pinref part="JP10" gate="G$1" pin="1"/>
 <wire x1="76.2" y1="34.29" x2="90.17" y2="34.29" width="0.1524" layer="91"/>
-<junction x="76.2" y="34.29"/>
 </segment>
 <segment>
 <wire x1="215.9" y1="119.38" x2="226.06" y2="119.38" width="0.1524" layer="91"/>
@@ -4502,10 +4478,8 @@ Source: avr.lbr</description>
 <net name="D6" class="0">
 <segment>
 <label x="85.09" y="31.75" size="1.778" layer="95"/>
-<wire x1="64.77" y1="31.75" x2="76.2" y2="31.75" width="0.1524" layer="91"/>
 <pinref part="JP9" gate="G$1" pin="4"/>
 <wire x1="76.2" y1="31.75" x2="90.17" y2="31.75" width="0.1524" layer="91"/>
-<junction x="76.2" y="31.75"/>
 </segment>
 <segment>
 <wire x1="215.9" y1="116.84" x2="226.06" y2="116.84" width="0.1524" layer="91"/>
@@ -4520,10 +4494,8 @@ Source: avr.lbr</description>
 <net name="D7" class="0">
 <segment>
 <label x="85.09" y="29.21" size="1.778" layer="95"/>
-<wire x1="64.77" y1="29.21" x2="76.2" y2="29.21" width="0.1524" layer="91"/>
 <pinref part="JP9" gate="G$1" pin="3"/>
 <wire x1="76.2" y1="29.21" x2="90.17" y2="29.21" width="0.1524" layer="91"/>
-<junction x="76.2" y="29.21"/>
 </segment>
 <segment>
 <wire x1="215.9" y1="114.3" x2="226.06" y2="114.3" width="0.1524" layer="91"/>
@@ -4546,10 +4518,8 @@ Source: avr.lbr</description>
 <net name="D10" class="0">
 <segment>
 <label x="102.87" y="24.13" size="1.778" layer="95"/>
-<wire x1="130.81" y1="24.13" x2="116.84" y2="24.13" width="0.1524" layer="91"/>
 <pinref part="JP8" gate="G$1" pin="4"/>
 <wire x1="116.84" y1="24.13" x2="102.87" y2="24.13" width="0.1524" layer="91"/>
-<junction x="116.84" y="24.13"/>
 </segment>
 <segment>
 <wire x1="215.9" y1="104.14" x2="226.06" y2="104.14" width="0.1524" layer="91"/>
@@ -4601,10 +4571,8 @@ Source: avr.lbr</description>
 </segment>
 <segment>
 <label x="85.09" y="49.53" size="1.778" layer="95"/>
-<wire x1="64.77" y1="49.53" x2="76.2" y2="49.53" width="0.1524" layer="91"/>
 <pinref part="JP11" gate="G$1" pin="3"/>
 <wire x1="76.2" y1="49.53" x2="90.17" y2="49.53" width="0.1524" layer="91"/>
-<junction x="76.2" y="49.53"/>
 </segment>
 <segment>
 <wire x1="215.9" y1="132.08" x2="226.06" y2="132.08" width="0.1524" layer="91"/>
@@ -4707,10 +4675,8 @@ Source: avr.lbr</description>
 </segment>
 <segment>
 <label x="102.87" y="52.07" size="1.778" layer="95"/>
-<wire x1="130.81" y1="52.07" x2="116.84" y2="52.07" width="0.1524" layer="91"/>
 <pinref part="JP3" gate="G$1" pin="1"/>
 <wire x1="116.84" y1="52.07" x2="102.87" y2="52.07" width="0.1524" layer="91"/>
-<junction x="116.84" y="52.07"/>
 </segment>
 </net>
 <net name="A6" class="0">
