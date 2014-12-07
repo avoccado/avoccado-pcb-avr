@@ -4731,13 +4731,13 @@ Source: avr.lbr</description>
 <wire x1="152.4" y1="200.66" x2="167.64" y2="200.66" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="44.45" y1="134.874" x2="54.61" y2="134.874" width="0.1524" layer="91"/>
 <pinref part="D1" gate="G$1" pin="C"/>
 <pinref part="R4" gate="G$1" pin="1"/>
-<wire x1="44.45" y1="134.62" x2="44.45" y2="134.874" width="0.1524" layer="91"/>
-<wire x1="44.45" y1="134.874" x2="44.45" y2="137.16" width="0.1524" layer="91"/>
-<junction x="44.45" y="134.874"/>
-<label x="55.88" y="134.62" size="1.778" layer="95"/>
+<wire x1="44.45" y1="134.62" x2="44.45" y2="136.652" width="0.1524" layer="91"/>
+<wire x1="44.45" y1="136.652" x2="44.45" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="44.45" y1="136.652" x2="54.356" y2="136.652" width="0.1524" layer="91"/>
+<junction x="44.45" y="136.652"/>
+<label x="53.34" y="137.16" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="A7" class="0">
