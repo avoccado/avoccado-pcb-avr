@@ -3812,7 +3812,7 @@ Source: avr.lbr</description>
 <part name="P+11" library="SparkFun" deviceset="3.3V" device="" value="3V3"/>
 <part name="P+12" library="SparkFun" deviceset="3.3V" device="" value="3V3"/>
 <part name="P+15" library="SparkFun" deviceset="3.3V" device="" value="VCC"/>
-<part name="Q1" library="SparkFun" deviceset="RESONATOR" device="SMD" value="#MHz"/>
+<part name="Q1" library="SparkFun" deviceset="RESONATOR" device="SMD" value="16MHz"/>
 <part name="GND4" library="SparkFun" deviceset="GND" device=""/>
 <part name="U1" library="SparkFun-DigitalIC" deviceset="ATMEGA328_SMT" device="" value="ATMEGA328P"/>
 <part name="P+1" library="SparkFun" deviceset="3.3V" device="" value="3V3"/>
@@ -4189,6 +4189,10 @@ Source: avr.lbr</description>
 <segment>
 <wire x1="36.83" y1="41.91" x2="44.45" y2="41.91" width="0.1524" layer="91"/>
 <label x="39.37" y="41.91" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="IC5" gate="G$1" pin="PD1(TXD)"/>
+<wire x1="215.9" y1="200.66" x2="228.6" y2="200.66" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="3V3" class="0">
@@ -4658,7 +4662,7 @@ Source: avr.lbr</description>
 <wire x1="96.52" y1="46.99" x2="76.2" y2="46.99" width="0.2032" layer="91"/>
 </segment>
 </net>
-<net name="BAT" class="1">
+<net name="VBAT" class="1">
 <segment>
 <pinref part="U2" gate="G$1" pin="VBAT"/>
 <wire x1="67.31" y1="156.21" x2="74.93" y2="156.21" width="0.1524" layer="91"/>
@@ -4708,12 +4712,6 @@ Source: avr.lbr</description>
 <segment>
 <wire x1="157.48" y1="203.2" x2="167.64" y2="203.2" width="0.1524" layer="91"/>
 <pinref part="IC5" gate="G$1" pin="ADC7"/>
-</segment>
-</net>
-<net name="N$9" class="0">
-<segment>
-<pinref part="IC5" gate="G$1" pin="PD1(TXD)"/>
-<wire x1="215.9" y1="200.66" x2="228.6" y2="200.66" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
