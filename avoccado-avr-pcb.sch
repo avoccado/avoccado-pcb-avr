@@ -3814,17 +3814,17 @@ Source: avr.lbr</description>
 <part name="P+15" library="SparkFun" deviceset="3.3V" device="" value="VCC"/>
 <part name="Q1" library="SparkFun" deviceset="RESONATOR" device="SMD" value="16MHz"/>
 <part name="GND4" library="SparkFun" deviceset="GND" device=""/>
-<part name="U1" library="SparkFun-DigitalIC" deviceset="ATMEGA328_SMT" device="" value="ATMEGA328P"/>
+<part name="AVR" library="SparkFun-DigitalIC" deviceset="ATMEGA328_SMT" device="" value="ATMEGA328P"/>
 <part name="P+1" library="SparkFun" deviceset="3.3V" device="" value="3V3"/>
 <part name="GND5" library="SparkFun" deviceset="GND" device=""/>
-<part name="Q2" library="SparkFun-DiscreteSemi" deviceset="MOSFET-NCHANNEL" device="2N7002PW"/>
+<part name="Q2" library="SparkFun-DiscreteSemi" deviceset="MOSFET-NCHANNEL" device="2N7002PW" value="FET"/>
 <part name="R1" library="SparkFun-Resistors" deviceset="RESISTOR" device="0603" value="1K"/>
-<part name="IC1" library="linear" deviceset="MCP1703" device="CB"/>
+<part name="LDO" library="linear" deviceset="MCP1703" device="CB"/>
 <part name="U2" library="SparkFun" deviceset="MCP73831" device=""/>
 <part name="GND2" library="SparkFun" deviceset="GND" device=""/>
 <part name="R3" library="SparkFun-Resistors" deviceset="RESISTOR" device="0603" value="2K"/>
 <part name="GND3" library="SparkFun" deviceset="GND" device=""/>
-<part name="D1" library="SparkFun" deviceset="LED" device="0603" value="CHARGE LED"/>
+<part name="D1" library="SparkFun" deviceset="LED" device="0603" value="LED"/>
 <part name="GND15" library="SparkFun" deviceset="GND" device=""/>
 <part name="X1" library="SparkFun" deviceset="USB" device="-MICROB" value="Micro USB"/>
 <part name="C4" library="SparkFun-Capacitors" deviceset="4.7UF-6.3V-10%(0603)" device="0603" value="4.7uF"/>
@@ -3844,7 +3844,7 @@ Source: avr.lbr</description>
 <part name="P+2" library="SparkFun" deviceset="3.3V" device="" value="3V3"/>
 <part name="R6" library="SparkFun-Resistors" deviceset="RESISTOR" device="0603" value="68"/>
 <part name="R7" library="SparkFun-Resistors" deviceset="RESISTOR" device="0603" value="68"/>
-<part name="JP1" library="SparkFun-Connectors" deviceset="M04" device="1X04_NO_SILK"/>
+<part name="MPU6050" library="SparkFun-Connectors" deviceset="M04" device="1X04_NO_SILK"/>
 <part name="IC5" library="idii" deviceset="MEGA8" device="-MI" value="ATMEGA328P-20MU"/>
 <part name="GND16" library="SparkFun" deviceset="GND" device=""/>
 <part name="R8" library="SparkFun-Resistors" deviceset="RESISTOR" device="0603" value="2K"/>
@@ -3853,7 +3853,6 @@ Source: avr.lbr</description>
 <sheets>
 <sheet>
 <plain>
-<text x="17.78" y="17.78" size="1.778" layer="95">Released under the Creative Commons Attribution Share-Alike 4.0 License</text>
 <text x="9.144" y="158.242" size="1.778" layer="97">microUSB</text>
 <text x="187.96" y="83.82" size="1.778" layer="91">NRF24L01+ board header SPI (IRQ NC)</text>
 <text x="187.96" y="58.42" size="1.778" layer="91">MPU6050 minimal header I2C (IRQ NC)</text>
@@ -3893,7 +3892,7 @@ Source: avr.lbr</description>
 <attribute name="VALUE" x="160.528" y="132.334" size="1.778" layer="96" rot="MR180"/>
 </instance>
 <instance part="GND4" gate="1" x="154.94" y="121.92"/>
-<instance part="U1" gate="G$1" x="190.5" y="129.54" smashed="yes">
+<instance part="AVR" gate="G$1" x="190.5" y="129.54" smashed="yes">
 <attribute name="NAME" x="172.974" y="158.242" size="1.778" layer="95"/>
 <attribute name="VALUE" x="172.72" y="91.44" size="1.778" layer="96"/>
 </instance>
@@ -3901,7 +3900,7 @@ Source: avr.lbr</description>
 <instance part="GND5" gate="1" x="165.1" y="93.98"/>
 <instance part="Q2" gate="G$1" x="54.61" y="82.55"/>
 <instance part="R1" gate="G$1" x="36.83" y="82.55"/>
-<instance part="IC1" gate="G$1" x="57.15" y="113.03"/>
+<instance part="LDO" gate="G$1" x="57.15" y="113.03"/>
 <instance part="U2" gate="G$1" x="57.15" y="153.67"/>
 <instance part="GND2" gate="1" x="69.85" y="120.65"/>
 <instance part="R3" gate="G$1" x="80.01" y="146.05" rot="R90"/>
@@ -3928,7 +3927,7 @@ Source: avr.lbr</description>
 </instance>
 <instance part="R6" gate="G$1" x="39.37" y="170.18"/>
 <instance part="R7" gate="G$1" x="39.37" y="179.07"/>
-<instance part="JP1" gate="G$1" x="204.47" y="52.07" rot="R180"/>
+<instance part="MPU6050" gate="G$1" x="204.47" y="52.07" rot="R180"/>
 <instance part="IC5" gate="G$1" x="190.5" y="226.06" smashed="yes">
 <attribute name="NAME" x="173.99" y="254.635" size="1.778" layer="95"/>
 <attribute name="VALUE" x="174.625" y="192.405" size="1.778" layer="96"/>
@@ -3991,9 +3990,9 @@ Source: avr.lbr</description>
 <wire x1="167.64" y1="99.06" x2="165.1" y2="99.06" width="0.1524" layer="91"/>
 <junction x="165.1" y="101.6"/>
 <junction x="165.1" y="99.06"/>
-<pinref part="U1" gate="G$1" pin="AGND"/>
-<pinref part="U1" gate="G$1" pin="GND@1"/>
-<pinref part="U1" gate="G$1" pin="GND@2"/>
+<pinref part="AVR" gate="G$1" pin="AGND"/>
+<pinref part="AVR" gate="G$1" pin="GND@1"/>
+<pinref part="AVR" gate="G$1" pin="GND@2"/>
 <pinref part="GND5" gate="1" pin="GND"/>
 </segment>
 <segment>
@@ -4006,7 +4005,7 @@ Source: avr.lbr</description>
 </segment>
 <segment>
 <pinref part="GND30" gate="1" pin="GND"/>
-<pinref part="IC1" gate="G$1" pin="GND"/>
+<pinref part="LDO" gate="G$1" pin="GND"/>
 <wire x1="57.15" y1="97.79" x2="57.15" y2="105.41" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -4049,7 +4048,7 @@ Source: avr.lbr</description>
 </segment>
 <segment>
 <wire x1="199.39" y1="54.61" x2="184.15" y2="54.61" width="0.1524" layer="91"/>
-<pinref part="JP1" gate="G$1" pin="1"/>
+<pinref part="MPU6050" gate="G$1" pin="1"/>
 <label x="193.04" y="55.88" size="1.778" layer="95"/>
 </segment>
 <segment>
@@ -4086,7 +4085,7 @@ Source: avr.lbr</description>
 <wire x1="149.86" y1="139.7" x2="149.86" y2="137.16" width="0.1524" layer="91"/>
 <label x="157.48" y="139.7" size="1.778" layer="95"/>
 <pinref part="C1" gate="G$1" pin="2"/>
-<pinref part="U1" gate="G$1" pin="AREF"/>
+<pinref part="AVR" gate="G$1" pin="AREF"/>
 </segment>
 <segment>
 <pinref part="IC5" gate="G$1" pin="AREF"/>
@@ -4103,7 +4102,7 @@ Source: avr.lbr</description>
 <wire x1="167.64" y1="154.94" x2="142.24" y2="154.94" width="0.1524" layer="91"/>
 <wire x1="142.24" y1="157.48" x2="142.24" y2="154.94" width="0.1524" layer="91"/>
 <label x="152.4" y="154.94" size="1.778" layer="95"/>
-<pinref part="U1" gate="G$1" pin="PC6(/RESET)"/>
+<pinref part="AVR" gate="G$1" pin="PC6(/RESET)"/>
 <pinref part="R2" gate="G$1" pin="1"/>
 </segment>
 <segment>
@@ -4121,7 +4120,7 @@ Source: avr.lbr</description>
 <wire x1="228.6" y1="96.52" x2="228.6" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="215.9" y1="96.52" x2="228.6" y2="96.52" width="0.1524" layer="91"/>
 <label x="218.44" y="96.52" size="1.778" layer="95"/>
-<pinref part="U1" gate="G$1" pin="PB5(SCK)"/>
+<pinref part="AVR" gate="G$1" pin="PB5(SCK)"/>
 </segment>
 <segment>
 <wire x1="181.61" y1="69.85" x2="195.58" y2="69.85" width="0.1524" layer="91"/>
@@ -4142,7 +4141,7 @@ Source: avr.lbr</description>
 <segment>
 <wire x1="215.9" y1="99.06" x2="226.06" y2="99.06" width="0.1524" layer="91"/>
 <label x="218.44" y="99.06" size="1.778" layer="95"/>
-<pinref part="U1" gate="G$1" pin="PB4(MISO)"/>
+<pinref part="AVR" gate="G$1" pin="PB4(MISO)"/>
 </segment>
 <segment>
 <wire x1="185.42" y1="67.31" x2="195.58" y2="67.31" width="0.1524" layer="91"/>
@@ -4163,7 +4162,7 @@ Source: avr.lbr</description>
 <segment>
 <wire x1="215.9" y1="101.6" x2="226.06" y2="101.6" width="0.1524" layer="91"/>
 <label x="218.44" y="101.6" size="1.778" layer="95"/>
-<pinref part="U1" gate="G$1" pin="PB3(MOSI/OC2)"/>
+<pinref part="AVR" gate="G$1" pin="PB3(MOSI/OC2)"/>
 </segment>
 <segment>
 <wire x1="210.82" y1="69.85" x2="220.98" y2="69.85" width="0.1524" layer="91"/>
@@ -4184,7 +4183,7 @@ Source: avr.lbr</description>
 <segment>
 <wire x1="215.9" y1="129.54" x2="226.06" y2="129.54" width="0.1524" layer="91"/>
 <label x="218.44" y="129.54" size="1.778" layer="95"/>
-<pinref part="U1" gate="G$1" pin="PD1(TXD)"/>
+<pinref part="AVR" gate="G$1" pin="PD1(TXD)"/>
 </segment>
 <segment>
 <wire x1="36.83" y1="41.91" x2="44.45" y2="41.91" width="0.1524" layer="91"/>
@@ -4226,7 +4225,7 @@ Source: avr.lbr</description>
 <pinref part="P+12" gate="G$1" pin="3.3V"/>
 <pinref part="C10" gate="G$1" pin="1"/>
 <pinref part="C13" gate="G$1" pin="+"/>
-<pinref part="IC1" gate="G$1" pin="VO"/>
+<pinref part="LDO" gate="G$1" pin="VO"/>
 <junction x="67.31" y="113.03"/>
 </segment>
 <segment>
@@ -4238,9 +4237,9 @@ Source: avr.lbr</description>
 <wire x1="165.1" y1="144.78" x2="165.1" y2="147.32" width="0.1524" layer="91"/>
 <junction x="165.1" y="149.86"/>
 <junction x="165.1" y="147.32"/>
-<pinref part="U1" gate="G$1" pin="AVCC"/>
-<pinref part="U1" gate="G$1" pin="VCC@1"/>
-<pinref part="U1" gate="G$1" pin="VCC@2"/>
+<pinref part="AVR" gate="G$1" pin="AVCC"/>
+<pinref part="AVR" gate="G$1" pin="VCC@1"/>
+<pinref part="AVR" gate="G$1" pin="VCC@2"/>
 <pinref part="P+1" gate="G$1" pin="3.3V"/>
 </segment>
 <segment>
@@ -4249,7 +4248,7 @@ Source: avr.lbr</description>
 </segment>
 <segment>
 <wire x1="199.39" y1="52.07" x2="184.15" y2="52.07" width="0.1524" layer="91"/>
-<pinref part="JP1" gate="G$1" pin="2"/>
+<pinref part="MPU6050" gate="G$1" pin="2"/>
 <label x="193.294" y="52.07" size="1.778" layer="95"/>
 </segment>
 <segment>
@@ -4284,7 +4283,7 @@ Source: avr.lbr</description>
 <segment>
 <wire x1="215.9" y1="106.68" x2="226.06" y2="106.68" width="0.1524" layer="91"/>
 <label x="218.44" y="106.68" size="1.778" layer="95"/>
-<pinref part="U1" gate="G$1" pin="PB1(OC1A)"/>
+<pinref part="AVR" gate="G$1" pin="PB1(OC1A)"/>
 </segment>
 <segment>
 <wire x1="185.42" y1="72.39" x2="195.58" y2="72.39" width="0.1524" layer="91"/>
@@ -4304,7 +4303,7 @@ Source: avr.lbr</description>
 <segment>
 <wire x1="215.9" y1="109.22" x2="226.06" y2="109.22" width="0.1524" layer="91"/>
 <label x="218.44" y="109.22" size="1.778" layer="95"/>
-<pinref part="U1" gate="G$1" pin="PB0(ICP)"/>
+<pinref part="AVR" gate="G$1" pin="PB0(ICP)"/>
 </segment>
 <segment>
 <pinref part="IC5" gate="G$1" pin="PB0(ICP)"/>
@@ -4319,10 +4318,10 @@ Source: avr.lbr</description>
 <segment>
 <wire x1="215.9" y1="142.24" x2="226.06" y2="142.24" width="0.1524" layer="91"/>
 <label x="218.44" y="142.24" size="1.778" layer="95"/>
-<pinref part="U1" gate="G$1" pin="PC5(ADC5/SCL)"/>
+<pinref part="AVR" gate="G$1" pin="PC5(ADC5/SCL)"/>
 </segment>
 <segment>
-<pinref part="JP1" gate="G$1" pin="3"/>
+<pinref part="MPU6050" gate="G$1" pin="3"/>
 <label x="193.294" y="49.53" size="1.778" layer="95"/>
 <wire x1="182.88" y1="49.53" x2="199.39" y2="49.53" width="0.1524" layer="91"/>
 </segment>
@@ -4339,10 +4338,10 @@ Source: avr.lbr</description>
 <segment>
 <wire x1="215.9" y1="144.78" x2="226.06" y2="144.78" width="0.1524" layer="91"/>
 <label x="218.44" y="144.78" size="1.778" layer="95"/>
-<pinref part="U1" gate="G$1" pin="PC4(ADC4/SDA)"/>
+<pinref part="AVR" gate="G$1" pin="PC4(ADC4/SDA)"/>
 </segment>
 <segment>
-<pinref part="JP1" gate="G$1" pin="4"/>
+<pinref part="MPU6050" gate="G$1" pin="4"/>
 <label x="193.294" y="46.99" size="1.778" layer="95"/>
 <wire x1="182.88" y1="46.99" x2="199.39" y2="46.99" width="0.1524" layer="91"/>
 </segment>
@@ -4360,7 +4359,7 @@ Source: avr.lbr</description>
 <segment>
 <wire x1="215.9" y1="147.32" x2="226.06" y2="147.32" width="0.1524" layer="91"/>
 <label x="218.44" y="147.32" size="1.778" layer="95"/>
-<pinref part="U1" gate="G$1" pin="PC3(ADC3)"/>
+<pinref part="AVR" gate="G$1" pin="PC3(ADC3)"/>
 </segment>
 <segment>
 <pinref part="IC5" gate="G$1" pin="PC3(ADC3)"/>
@@ -4376,7 +4375,7 @@ Source: avr.lbr</description>
 <segment>
 <wire x1="215.9" y1="149.86" x2="226.06" y2="149.86" width="0.1524" layer="91"/>
 <label x="218.44" y="149.86" size="1.778" layer="95"/>
-<pinref part="U1" gate="G$1" pin="PC2(ADC2)"/>
+<pinref part="AVR" gate="G$1" pin="PC2(ADC2)"/>
 </segment>
 <segment>
 <pinref part="IC5" gate="G$1" pin="PC2(ADC2)"/>
@@ -4392,7 +4391,7 @@ Source: avr.lbr</description>
 <segment>
 <wire x1="215.9" y1="152.4" x2="226.06" y2="152.4" width="0.1524" layer="91"/>
 <label x="218.44" y="152.4" size="1.778" layer="95"/>
-<pinref part="U1" gate="G$1" pin="PC1(ADC1)"/>
+<pinref part="AVR" gate="G$1" pin="PC1(ADC1)"/>
 </segment>
 <segment>
 <pinref part="IC5" gate="G$1" pin="PC1(ADC1)"/>
@@ -4408,7 +4407,7 @@ Source: avr.lbr</description>
 <segment>
 <wire x1="215.9" y1="154.94" x2="226.06" y2="154.94" width="0.1524" layer="91"/>
 <label x="218.44" y="154.94" size="1.778" layer="95"/>
-<pinref part="U1" gate="G$1" pin="PC0(ADC0)"/>
+<pinref part="AVR" gate="G$1" pin="PC0(ADC0)"/>
 </segment>
 <segment>
 <pinref part="IC5" gate="G$1" pin="PC0(ADC0)"/>
@@ -4419,7 +4418,7 @@ Source: avr.lbr</description>
 <segment>
 <wire x1="215.9" y1="127" x2="226.06" y2="127" width="0.1524" layer="91"/>
 <label x="218.44" y="127" size="1.778" layer="95"/>
-<pinref part="U1" gate="G$1" pin="PD2(INT0)"/>
+<pinref part="AVR" gate="G$1" pin="PD2(INT0)"/>
 <label x="64.77" y="180.34" size="1.778" layer="95"/>
 </segment>
 <segment>
@@ -4436,7 +4435,7 @@ Source: avr.lbr</description>
 <segment>
 <wire x1="215.9" y1="124.46" x2="226.06" y2="124.46" width="0.1524" layer="91"/>
 <label x="218.44" y="124.46" size="1.778" layer="95"/>
-<pinref part="U1" gate="G$1" pin="PD3(INT1)"/>
+<pinref part="AVR" gate="G$1" pin="PD3(INT1)"/>
 </segment>
 <segment>
 <pinref part="R1" gate="G$1" pin="1"/>
@@ -4456,7 +4455,7 @@ Source: avr.lbr</description>
 <segment>
 <wire x1="215.9" y1="121.92" x2="226.06" y2="121.92" width="0.1524" layer="91"/>
 <label x="218.44" y="121.92" size="1.778" layer="95"/>
-<pinref part="U1" gate="G$1" pin="PD4(XCK/T0)"/>
+<pinref part="AVR" gate="G$1" pin="PD4(XCK/T0)"/>
 </segment>
 <segment>
 <pinref part="IC5" gate="G$1" pin="PD4(XCK/T0)"/>
@@ -4472,7 +4471,7 @@ Source: avr.lbr</description>
 <segment>
 <wire x1="215.9" y1="119.38" x2="226.06" y2="119.38" width="0.1524" layer="91"/>
 <label x="218.44" y="119.38" size="1.778" layer="95"/>
-<pinref part="U1" gate="G$1" pin="PD5(T1)"/>
+<pinref part="AVR" gate="G$1" pin="PD5(T1)"/>
 </segment>
 <segment>
 <pinref part="IC5" gate="G$1" pin="PD5(T1)"/>
@@ -4488,7 +4487,7 @@ Source: avr.lbr</description>
 <segment>
 <wire x1="215.9" y1="116.84" x2="226.06" y2="116.84" width="0.1524" layer="91"/>
 <label x="218.44" y="116.84" size="1.778" layer="95"/>
-<pinref part="U1" gate="G$1" pin="PD6(AIN0)"/>
+<pinref part="AVR" gate="G$1" pin="PD6(AIN0)"/>
 </segment>
 <segment>
 <pinref part="IC5" gate="G$1" pin="PD6(AIN0)"/>
@@ -4504,7 +4503,7 @@ Source: avr.lbr</description>
 <segment>
 <wire x1="215.9" y1="114.3" x2="226.06" y2="114.3" width="0.1524" layer="91"/>
 <label x="218.44" y="114.3" size="1.778" layer="95"/>
-<pinref part="U1" gate="G$1" pin="PD7(AIN1)"/>
+<pinref part="AVR" gate="G$1" pin="PD7(AIN1)"/>
 <label x="64.77" y="171.45" size="1.778" layer="95"/>
 </segment>
 <segment>
@@ -4528,7 +4527,7 @@ Source: avr.lbr</description>
 <segment>
 <wire x1="215.9" y1="104.14" x2="226.06" y2="104.14" width="0.1524" layer="91"/>
 <label x="218.44" y="104.14" size="1.778" layer="95"/>
-<pinref part="U1" gate="G$1" pin="PB2(SS/OC1B)"/>
+<pinref part="AVR" gate="G$1" pin="PB2(SS/OC1B)"/>
 </segment>
 <segment>
 <wire x1="210.82" y1="72.39" x2="220.98" y2="72.39" width="0.1524" layer="91"/>
@@ -4544,7 +4543,7 @@ Source: avr.lbr</description>
 <segment>
 <wire x1="165.1" y1="124.46" x2="167.64" y2="124.46" width="0.1524" layer="91"/>
 <pinref part="Q1" gate="G$1" pin="1"/>
-<pinref part="U1" gate="G$1" pin="PB7(XTAL2/TOSC2)"/>
+<pinref part="AVR" gate="G$1" pin="PB7(XTAL2/TOSC2)"/>
 </segment>
 <segment>
 <wire x1="165.1" y1="241.3" x2="167.64" y2="241.3" width="0.1524" layer="91"/>
@@ -4555,7 +4554,7 @@ Source: avr.lbr</description>
 <segment>
 <wire x1="165.1" y1="129.54" x2="167.64" y2="129.54" width="0.1524" layer="91"/>
 <pinref part="Q1" gate="G$1" pin="3"/>
-<pinref part="U1" gate="G$1" pin="PB6(XTAL1/TOSC1)"/>
+<pinref part="AVR" gate="G$1" pin="PB6(XTAL1/TOSC1)"/>
 </segment>
 <segment>
 <wire x1="165.1" y1="238.76" x2="167.64" y2="238.76" width="0.1524" layer="91"/>
@@ -4581,7 +4580,7 @@ Source: avr.lbr</description>
 <segment>
 <wire x1="215.9" y1="132.08" x2="226.06" y2="132.08" width="0.1524" layer="91"/>
 <label x="218.44" y="132.08" size="1.778" layer="95"/>
-<pinref part="U1" gate="G$1" pin="PD0(RXD)"/>
+<pinref part="AVR" gate="G$1" pin="PD0(RXD)"/>
 </segment>
 <segment>
 <pinref part="IC5" gate="G$1" pin="PD0(RXD)"/>
@@ -4674,7 +4673,7 @@ Source: avr.lbr</description>
 <junction x="34.29" y="113.03"/>
 <label x="26.67" y="113.03" size="1.778" layer="95"/>
 <pinref part="C19" gate="G$1" pin="+"/>
-<pinref part="IC1" gate="G$1" pin="VI"/>
+<pinref part="LDO" gate="G$1" pin="VI"/>
 <label x="74.93" y="156.21" size="1.778" layer="95"/>
 </segment>
 <segment>
@@ -4685,7 +4684,7 @@ Source: avr.lbr</description>
 </net>
 <net name="A6" class="0">
 <segment>
-<pinref part="U1" gate="G$1" pin="ADC6"/>
+<pinref part="AVR" gate="G$1" pin="ADC6"/>
 <wire x1="215.9" y1="139.7" x2="226.06" y2="139.7" width="0.1524" layer="91"/>
 <label x="218.44" y="139.7" size="1.778" layer="95"/>
 </segment>
@@ -4705,7 +4704,7 @@ Source: avr.lbr</description>
 </net>
 <net name="A7" class="0">
 <segment>
-<pinref part="U1" gate="G$1" pin="ADC7"/>
+<pinref part="AVR" gate="G$1" pin="ADC7"/>
 <wire x1="215.9" y1="137.16" x2="226.06" y2="137.16" width="0.1524" layer="91"/>
 <label x="218.44" y="137.16" size="1.778" layer="95"/>
 </segment>
