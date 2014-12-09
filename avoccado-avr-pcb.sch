@@ -3103,10 +3103,10 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <package name="1X04-SMD">
 <wire x1="5.08" y1="1.885" x2="-5.08" y2="1.885" width="0.127" layer="51"/>
 <wire x1="-5.08" y1="-1.885" x2="5.08" y2="-1.885" width="0.127" layer="51"/>
-<smd name="4" x="3.81" y="0" dx="3" dy="1" layer="1" roundness="25" rot="R90"/>
-<smd name="3" x="1.27" y="0" dx="3" dy="1" layer="1" roundness="25" rot="R90"/>
-<smd name="2" x="-1.27" y="0" dx="3" dy="1" layer="1" roundness="25" rot="R90"/>
-<smd name="1" x="-3.81" y="0" dx="3" dy="1" layer="1" roundness="25" rot="R90"/>
+<smd name="4" x="3.81" y="-0.254" dx="2.4" dy="1" layer="1" roundness="25" rot="R90"/>
+<smd name="3" x="1.27" y="-0.254" dx="2.4" dy="1" layer="1" roundness="25" rot="R90"/>
+<smd name="2" x="-1.27" y="-0.254" dx="2.4" dy="1" layer="1" roundness="25" rot="R90"/>
+<smd name="1" x="-3.81" y="-0.254" dx="2.4" dy="1" layer="1" roundness="25" rot="R90"/>
 <wire x1="-3.81" y1="8.89" x2="-3.81" y2="-8.89" width="0.127" layer="49"/>
 <wire x1="-1.27" y1="8.89" x2="-1.27" y2="-8.89" width="0.127" layer="49"/>
 <wire x1="1.27" y1="8.89" x2="1.27" y2="-8.89" width="0.127" layer="49"/>
@@ -3844,7 +3844,7 @@ Source: avr.lbr</description>
 <part name="P+2" library="SparkFun" deviceset="3.3V" device="" value="3V3"/>
 <part name="R6" library="SparkFun-Resistors" deviceset="RESISTOR" device="0603" value="68"/>
 <part name="R7" library="SparkFun-Resistors" deviceset="RESISTOR" device="0603" value="68"/>
-<part name="JP1" library="SparkFun-Connectors" deviceset="M04" device="LOCK"/>
+<part name="JP1" library="SparkFun-Connectors" deviceset="M04" device="1X04_NO_SILK"/>
 <part name="IC5" library="idii" deviceset="MEGA8" device="-MI" value="ATMEGA328P-20MU"/>
 <part name="GND16" library="SparkFun" deviceset="GND" device=""/>
 <part name="R8" library="SparkFun-Resistors" deviceset="RESISTOR" device="0603" value="2K"/>
@@ -4322,9 +4322,9 @@ Source: avr.lbr</description>
 <pinref part="U1" gate="G$1" pin="PC5(ADC5/SCL)"/>
 </segment>
 <segment>
-<wire x1="182.88" y1="49.53" x2="199.39" y2="49.53" width="0.1524" layer="91"/>
 <pinref part="JP1" gate="G$1" pin="3"/>
 <label x="193.294" y="49.53" size="1.778" layer="95"/>
+<wire x1="182.88" y1="49.53" x2="199.39" y2="49.53" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="IC5" gate="G$1" pin="PC5(ADC5/SCL)"/>
@@ -4342,9 +4342,9 @@ Source: avr.lbr</description>
 <pinref part="U1" gate="G$1" pin="PC4(ADC4/SDA)"/>
 </segment>
 <segment>
-<wire x1="182.88" y1="46.99" x2="199.39" y2="46.99" width="0.1524" layer="91"/>
 <pinref part="JP1" gate="G$1" pin="4"/>
 <label x="193.294" y="46.99" size="1.778" layer="95"/>
+<wire x1="182.88" y1="46.99" x2="199.39" y2="46.99" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="IC5" gate="G$1" pin="PC4(ADC4/SDA)"/>
