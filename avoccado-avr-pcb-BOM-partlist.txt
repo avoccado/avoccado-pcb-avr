@@ -1,0 +1,34 @@
+Partlist
+
+Exported from avoccado-avr-pcb.brd at 12/8/2014 3:34:41 PM
+
+Assembly variant: Full
+
+Part     Value                   Package       Position (mil)        Orientation
+                                               
+C1       0.1uF                   C0402         (575 425)             R270
+C3       0.1uF                   C0402         (575 325)             R90
+C4       4.7uF                   0603-CAP      (220 1535)            R90
+C10      0.1uF                   C0402         (505 1005)            R90
+C13      10uF                    EIA3216       (290 1225)            R270
+C19      10uF                    EIA3216       (410 1225)            R270
+D1       CHARGE LED              LED-0603      (525 355)             R0
+IC1      MCP1703CB               SOT23         (540 1125)            R0
+JP1      4x1 header female       1X04_LOCK     (650 1285)            R90
+NRF24    4X2 header female       2X4           (330 185)             R0
+Q1       16MHz                   RESONATOR-SMD (150 840)             R90
+Q2       MOSFET-NCHANNEL2N7002PW SOT323        (160 1045)            R90
+R1       1K                      0603-RES      (300 895)             R90
+R2       10K                     0603-RES      (400 895)             R90
+R3       2K                      0603-RES      (400 1395)            R90
+R4       2K                      0603-RES      (170 345)             R90
+R5       1M                      0603-RES      (290 1045)            R270
+R6       68                      0603-RES      (300 1535)            R90
+R7       68                      0603-RES      (300 1395)            R270
+R8       2K                      0603-RES      (400 1535)            R90
+U2       MCP73831                SOT23-5       (520 1505)            R0
+X1       Micro USB               USB-MICROB    (50 1435)             R270
+
+and either of the following two:
+IC5      ATMEGA328P-20MU         MLF32         (350 585)             R315
+U1       ATMEGA328P              TQFP32-08     (350 585)             R315
