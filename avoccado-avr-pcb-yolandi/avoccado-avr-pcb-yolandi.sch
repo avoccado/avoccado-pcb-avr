@@ -7242,6 +7242,10 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="JP11" gate="G$1" pin="1"/>
 <label x="-43.18" y="17.78" size="1.778" layer="95"/>
 </segment>
+<segment>
+<wire x1="-43.18" y1="-10.16" x2="-17.78" y2="-10.16" width="0.1524" layer="91"/>
+<pinref part="JP18" gate="G$1" pin="1"/>
+</segment>
 </net>
 <net name="D9" class="0">
 <segment>
@@ -7524,6 +7528,11 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="25.4" y1="170.18" x2="38.1" y2="170.18" width="0.1524" layer="91"/>
 <pinref part="C4" gate="G$1" pin="1"/>
 <wire x1="25.4" y1="170.18" x2="25.4" y2="162.56" width="0.1524" layer="91"/>
+<wire x1="12.7" y1="170.18" x2="25.4" y2="170.18" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<wire x1="-30.48" y1="2.54" x2="-17.78" y2="2.54" width="0.1524" layer="91"/>
+<pinref part="JP17" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="SOC" class="0">
