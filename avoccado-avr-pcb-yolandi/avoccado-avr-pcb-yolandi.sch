@@ -2197,9 +2197,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <hole x="0" y="0" drill="1.5494"/>
 </package>
 <package name="1X01_POGOPIN_HOLE_0.58">
+<description>Modified 1x1 pogopin receptor</description>
 <circle x="0" y="0" radius="0.635" width="0.127" layer="51"/>
 <pad name="1" x="0" y="0" drill="0.9" diameter="0.8128" rot="R90" thermals="no"/>
-<hole x="0" y="0" drill="1.4732"/>
 </package>
 <package name="SNAP-FEMALE">
 <pad name="1" x="0" y="0" drill="2.921" diameter="4.572"/>
@@ -2237,9 +2237,10 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="-1.27" y="-5.715" size="1.27" layer="27">&gt;VALUE</text>
 </package>
 <package name="1X01NS-KIT">
-<pad name="1" x="0" y="0" drill="1.016" diameter="1.8796" rot="R90" stop="no"/>
-<circle x="0" y="0" radius="0.508" width="0" layer="29"/>
-<circle x="0" y="0" radius="0.9398" width="0" layer="30"/>
+<description>1x1 plated hole, pogo receptor</description>
+<pad name="1" x="0" y="0" drill="1.016" diameter="1.524" rot="R90" stop="no"/>
+<circle x="0" y="0" radius="0.762" width="0" layer="29"/>
+<circle x="0" y="0" radius="0.762" width="0" layer="30"/>
 </package>
 <package name="1X02">
 <wire x1="-0.635" y1="1.27" x2="0.635" y2="1.27" width="0.2032" layer="21"/>
@@ -7283,33 +7284,33 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="JP1" library="SparkFun-Connectors" deviceset="M08" device="NO_SILK" value="MPU6050"/>
 <part name="R6" library="SparkFun-Resistors" deviceset="RESISTOR" device="0603" value="1K"/>
 <part name="LOGO1" library="SparkFun-Aesthetics" deviceset="OSHW-LOGO" device="S"/>
-<part name="JP6" library="SparkFun-Connectors" deviceset="M01" device="POGOPIN_HOLE_0.58"/>
-<part name="JP8" library="SparkFun-Connectors" deviceset="M01" device="POGOPIN_HOLE_0.58"/>
-<part name="JP9" library="SparkFun-Connectors" deviceset="M01" device="POGOPIN_HOLE_0.58"/>
-<part name="JP10" library="SparkFun-Connectors" deviceset="M01" device="POGOPIN_HOLE_0.58"/>
-<part name="JP11" library="SparkFun-Connectors" deviceset="M01" device="POGOPIN_HOLE_0.58"/>
-<part name="JP12" library="SparkFun-Connectors" deviceset="M01" device="POGOPIN_HOLE_0.58"/>
-<part name="JP13" library="SparkFun-Connectors" deviceset="M01" device="POGOPIN_HOLE_0.58"/>
-<part name="JP14" library="SparkFun-Connectors" deviceset="M01" device="POGOPIN_HOLE_0.58"/>
-<part name="JP15" library="SparkFun-Connectors" deviceset="M01" device="POGOPIN_HOLE_0.58"/>
-<part name="JP3" library="SparkFun-Connectors" deviceset="M01" device="POGOPIN_HOLE_0.58"/>
-<part name="JP17" library="SparkFun-Connectors" deviceset="M01" device="POGOPIN_HOLE_0.58"/>
-<part name="JP18" library="SparkFun-Connectors" deviceset="M01" device="POGOPIN_HOLE_0.58"/>
+<part name="JP6" library="SparkFun-Connectors" deviceset="M01" device="NOSILK-KIT" value="M01NOSILK-KIT"/>
+<part name="JP8" library="SparkFun-Connectors" deviceset="M01" device="NOSILK-KIT" value="M01NOSILK-KIT"/>
+<part name="JP9" library="SparkFun-Connectors" deviceset="M01" device="NOSILK-KIT" value="M01NOSILK-KIT"/>
+<part name="JP10" library="SparkFun-Connectors" deviceset="M01" device="NOSILK-KIT" value="M01NOSILK-KIT"/>
+<part name="JP11" library="SparkFun-Connectors" deviceset="M01" device="NOSILK-KIT" value="M01NOSILK-KIT"/>
+<part name="JP12" library="SparkFun-Connectors" deviceset="M01" device="NOSILK-KIT" value="M01NOSILK-KIT"/>
+<part name="JP13" library="SparkFun-Connectors" deviceset="M01" device="NOSILK-KIT" value="M01NOSILK-KIT"/>
+<part name="JP14" library="SparkFun-Connectors" deviceset="M01" device="NOSILK-KIT" value="M01NOSILK-KIT"/>
+<part name="JP15" library="SparkFun-Connectors" deviceset="M01" device="NOSILK-KIT" value="M01NOSILK-KIT"/>
+<part name="JP3" library="SparkFun-Connectors" deviceset="M01" device="NOSILK-KIT" value="M01NOSILK-KIT"/>
+<part name="JP17" library="SparkFun-Connectors" deviceset="M01" device="NOSILK-KIT" value="M01NOSILK-KIT"/>
+<part name="JP18" library="SparkFun-Connectors" deviceset="M01" device="NOSILK-KIT" value="M01NOSILK-KIT"/>
 <part name="C2" library="SparkFun" deviceset="CAP" device="0402" value="0.1uF"/>
 <part name="TP1" library="SparkFun-Passives" deviceset="TEST-POINT" device="TP_15TH_THRU"/>
 <part name="TP6" library="SparkFun-Passives" deviceset="TEST-POINT" device="TP_15TH_THRU"/>
 <part name="TP7" library="SparkFun-Passives" deviceset="TEST-POINT" device="TP_15TH_THRU"/>
 <part name="TP8" library="SparkFun-Passives" deviceset="TEST-POINT" device="TP_15TH_THRU"/>
-<part name="JP19" library="SparkFun-Connectors" deviceset="M01" device="POGOPIN_HOLE_0.58"/>
-<part name="JP20" library="SparkFun-Connectors" deviceset="M01" device="POGOPIN_HOLE_0.58"/>
-<part name="JP21" library="SparkFun-Connectors" deviceset="M01" device="POGOPIN_HOLE_0.58"/>
-<part name="JP22" library="SparkFun-Connectors" deviceset="M01" device="POGOPIN_HOLE_0.58"/>
+<part name="JP19" library="SparkFun-Connectors" deviceset="M01" device="NOSILK-KIT" value="M01NOSILK-KIT"/>
+<part name="JP20" library="SparkFun-Connectors" deviceset="M01" device="NOSILK-KIT" value="M01NOSILK-KIT"/>
+<part name="JP21" library="SparkFun-Connectors" deviceset="M01" device="NOSILK-KIT" value="M01NOSILK-KIT"/>
+<part name="JP22" library="SparkFun-Connectors" deviceset="M01" device="NOSILK-KIT" value="M01NOSILK-KIT"/>
 <part name="C5" library="SparkFun-Capacitors" deviceset="4.7UF-6.3V-10%(0603)" device="0603" value="4.7uF"/>
 <part name="C6" library="SparkFun-Capacitors" deviceset="4.7UF-6.3V-10%(0603)" device="0603" value="4.7uF"/>
-<part name="JP24" library="SparkFun-Connectors" deviceset="M01" device="POGOPIN_HOLE_0.58"/>
-<part name="JP23" library="SparkFun-Connectors" deviceset="M01" device="POGOPIN_HOLE_0.58"/>
-<part name="JP25" library="SparkFun-Connectors" deviceset="M01" device="POGOPIN_HOLE_0.58"/>
-<part name="JP26" library="SparkFun-Connectors" deviceset="M01" device="POGOPIN_HOLE_0.58"/>
+<part name="JP24" library="SparkFun-Connectors" deviceset="M01" device="NOSILK-KIT" value="M01NOSILK-KIT"/>
+<part name="JP23" library="SparkFun-Connectors" deviceset="M01" device="NOSILK-KIT" value="M01NOSILK-KIT"/>
+<part name="JP25" library="SparkFun-Connectors" deviceset="M01" device="NOSILK-KIT" value="M01NOSILK-KIT"/>
+<part name="JP26" library="SparkFun-Connectors" deviceset="M01" device="NOSILK-KIT" value="M01NOSILK-KIT"/>
 <part name="JP2" library="SparkFun-Connectors" deviceset="M02" device="1X02_NO_SILK"/>
 <part name="JP27" library="SparkFun-Connectors" deviceset="M02" device="1X02_NO_SILK"/>
 <part name="JP28" library="SparkFun-Connectors" deviceset="M02" device="1X02_NO_SILK"/>
