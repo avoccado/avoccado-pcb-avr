@@ -6834,6 +6834,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="JP22" library="SparkFun-Connectors" deviceset="M01" device="POGOPIN_HOLE_0.58"/>
 <part name="C5" library="SparkFun-Capacitors" deviceset="4.7UF-6.3V-10%(0603)" device="0603" value="4.7uF"/>
 <part name="C6" library="SparkFun-Capacitors" deviceset="4.7UF-6.3V-10%(0603)" device="0603" value="4.7uF"/>
+<part name="JP24" library="SparkFun-Connectors" deviceset="M01" device="POGOPIN_HOLE_0.58"/>
 </parts>
 <sheets>
 <sheet>
@@ -6920,7 +6921,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="JP14" gate="G$1" x="109.22" y="71.12"/>
 <instance part="JP15" gate="G$1" x="109.22" y="68.58"/>
 <instance part="JP16" gate="G$1" x="109.22" y="66.04"/>
-<instance part="JP3" gate="G$1" x="45.72" y="15.24" rot="R180"/>
+<instance part="JP3" gate="G$1" x="-10.16" y="86.36" rot="R180"/>
 <instance part="JP17" gate="G$1" x="-10.16" y="2.54" rot="R180"/>
 <instance part="JP18" gate="G$1" x="-10.16" y="-10.16" rot="R180"/>
 <instance part="C2" gate="G$1" x="127" y="154.94" smashed="yes" rot="R270">
@@ -6937,6 +6938,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="JP22" gate="G$1" x="383.54" y="154.94" rot="R180"/>
 <instance part="C5" gate="G$1" x="35.56" y="104.14"/>
 <instance part="C6" gate="G$1" x="71.12" y="106.68"/>
+<instance part="JP24" gate="G$1" x="-10.16" y="-35.56" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -7059,6 +7061,11 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="-17.78" y1="48.26" x2="-43.18" y2="48.26" width="0.1524" layer="91"/>
 <pinref part="JP6" gate="G$1" pin="1"/>
 <label x="-43.18" y="48.26" size="1.778" layer="95"/>
+<label x="-43.18" y="86.36" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="-17.78" y1="86.36" x2="-43.18" y2="86.36" width="0.1524" layer="91"/>
+<pinref part="JP3" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="AREF" class="0">
@@ -7245,6 +7252,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <segment>
 <wire x1="-43.18" y1="-10.16" x2="-17.78" y2="-10.16" width="0.1524" layer="91"/>
 <pinref part="JP18" gate="G$1" pin="1"/>
+<label x="-43.18" y="-10.16" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="D9" class="0">
@@ -7531,8 +7539,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="12.7" y1="170.18" x2="25.4" y2="170.18" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="-30.48" y1="2.54" x2="-17.78" y2="2.54" width="0.1524" layer="91"/>
+<wire x1="-43.18" y1="2.54" x2="-17.78" y2="2.54" width="0.1524" layer="91"/>
 <pinref part="JP17" gate="G$1" pin="1"/>
+<label x="-43.18" y="2.54" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SOC" class="0">
@@ -7586,6 +7595,11 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="-17.78" y1="58.42" x2="-43.18" y2="58.42" width="0.1524" layer="91"/>
 <pinref part="JP7" gate="G$1" pin="1"/>
 <label x="-43.18" y="58.42" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="-17.78" y1="-35.56" x2="-43.18" y2="-35.56" width="0.1524" layer="91"/>
+<pinref part="JP24" gate="G$1" pin="1"/>
+<label x="-43.18" y="-35.56" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="A6" class="0">
