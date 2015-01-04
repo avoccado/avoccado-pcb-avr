@@ -7272,7 +7272,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="LDO" library="linear" deviceset="MCP1703" device="CB"/>
 <part name="U2" library="SparkFun" deviceset="MCP73831" device=""/>
 <part name="GND2" library="SparkFun" deviceset="GND" device=""/>
-<part name="R3" library="SparkFun-Resistors" deviceset="RESISTOR" device="0603" value="2K"/>
+<part name="R3" library="SparkFun-Resistors" deviceset="RESISTOR" device="0603" value="Rchg"/>
 <part name="GND3" library="SparkFun" deviceset="GND" device=""/>
 <part name="D1" library="SparkFun" deviceset="LED" device="0603" value="LED"/>
 <part name="C4" library="SparkFun-Capacitors" deviceset="4.7UF-6.3V-10%(0603)" device="0603" value="4.7uF"/>
