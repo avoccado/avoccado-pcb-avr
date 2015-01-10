@@ -143,7 +143,6 @@
 
 Yolandi is the minified version of Avoccado-avr with less pins broken out and a footprint of less than one square inch for the PCB without peripherals.</description>
 <plain>
-<text x="11.811" y="12.708" size="0.508" layer="21" font="vector">ATMEGA328</text>
 <circle x="17.78" y="6.104" radius="0.254" width="0.508" layer="30"/>
 <circle x="4.318" y="5.088" radius="0.254" width="0.508" layer="30"/>
 <text x="11.6078" y="20.836" size="0.508" layer="21" font="vector">ETEMU.COM 2O15</text>
@@ -935,6 +934,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <element name="JP4" library="SparkFun-Connectors" package="1X02_NO_SILK" value="M021X02_NO_SILK" x="19.812" y="8.636" smashed="yes" rot="R180"/>
 <element name="JP5" library="SparkFun-Connectors" package="1X02_NO_SILK" value="M021X02_NO_SILK" x="14.732" y="8.636" smashed="yes" rot="R180"/>
 <element name="TP2" library="SparkFun-Connectors" package="1X01NS-KIT" value="M01NOSILK-KIT" x="2.032" y="8.636" smashed="yes"/>
+<element name="LOGO2" library="SparkFun-Aesthetics" package="OSHW-LOGO-S" value="OSHW-LOGOS" x="14.732" y="15.756"/>
 </elements>
 <signals>
 <signal name="GND" class="1">
