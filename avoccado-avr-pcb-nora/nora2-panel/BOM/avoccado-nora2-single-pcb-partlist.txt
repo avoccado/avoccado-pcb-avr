@@ -1,0 +1,29 @@
+Partlist
+
+Exported from avoccado-avr-pcb-nora-2.brd 
+
+EAGLE Version 7.2.0 Copyright (c) 1988-2014 CadSoft
+
+Assembly variant: 
+
+Part     Value           Package       Library               Position (inch)       Orientation
+
+AVR      ATMEGA328P      TQFP32-08     SparkFun-DigitalIC    (0.58 0.62031496)     R180
+C1       0.1uF           C0402         SparkFun              (0.35 0.64031496)     R90
+C2       0.1uF           C0402         SparkFun              (0.78 0.26031496)     R0
+C3       0.1uF           C0402         SparkFun              (0.82 0.60031496)     R90
+C4       4.7uF           0603-CAP      SparkFun-Capacitors   (0.45 0.15031496)     R90
+C5       4.7uF           0603-CAP      SparkFun-Capacitors   (0.23 0.15031496)     R90
+C6       4.7uF           0603-CAP      SparkFun-Capacitors   (0.42 0.26031496)     R0
+C10      0.1uF           C0402         SparkFun              (0.28 0.26031496)     R180
+D1       LED             LED-0603      SparkFun              (0.80 0.04) 	       R270
+LDO      MCP1703CB       SOT23         linear                (0.35 0.15031496)     R180
+Q1       16MHz           RESONATOR-SMD SparkFun              (0.82 0.83231496)     R0
+Q2       FET             SOT323        SparkFun-DiscreteSemi (0.08 0.06031496)     R270
+R1       1K              0603-RES      SparkFun-Resistors    (0.08 0.20031496)     R180
+R2       10K             0603-RES      SparkFun-Resistors    (0.08 0.26031496)     R180
+R3       2K              0603-RES      SparkFun-Resistors    (0.67 0.15031496)     R270
+R4       1K              0603-RES      SparkFun-Resistors    (0.83 0.15031496)     R90
+R5       1M              0603-RES      SparkFun-Resistors    (0.08 0.14031496)     R180
+R6       1K              0603-RES      SparkFun-Resistors    (0.75 0.15031496)     R270
+U2       MCP73831        SOT23-5       SparkFun              (0.56 0.14031496)     R180
