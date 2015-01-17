@@ -1697,9 +1697,8 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <label x="198.12" y="91.44" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="35.56" y1="17.78" x2="43.18" y2="17.78" width="0.1524" layer="91"/>
-<pinref part="ICSP" gate="G$1" pin="8"/>
-<label x="40.64" y="17.78" size="1.778" layer="95"/>
+<wire x1="66.04" y1="17.78" x2="73.66" y2="17.78" width="0.1524" layer="91"/>
+<label x="66.04" y="17.78" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="RXI" class="0">
