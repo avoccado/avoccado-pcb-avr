@@ -2776,6 +2776,8 @@ QFN is non-stock</description>
 <part name="R8" library="SparkFun-Resistors" deviceset="RESISTOR" device="0603" value="1M"/>
 <part name="C7" library="SparkFun" deviceset="CAP" device="0402" value="0.1uF"/>
 <part name="GND10" library="SparkFun" deviceset="GND" device=""/>
+<part name="JP1" library="SparkFun-Connectors" deviceset="M01" device="NOSILK-KIT" value="M01NOSILK-KIT"/>
+<part name="JP7" library="SparkFun-Connectors" deviceset="M01" device="NOSILK-KIT" value="M01NOSILK-KIT"/>
 </parts>
 <sheets>
 <sheet>
@@ -2878,6 +2880,8 @@ QFN is non-stock</description>
 <instance part="R8" gate="G$1" x="20.32" y="40.64" rot="R90"/>
 <instance part="C7" gate="G$1" x="30.48" y="25.4"/>
 <instance part="GND10" gate="1" x="20.32" y="12.7"/>
+<instance part="JP1" gate="G$1" x="383.54" y="-17.78" rot="R180"/>
+<instance part="JP7" gate="G$1" x="383.54" y="-7.62" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -3004,6 +3008,11 @@ QFN is non-stock</description>
 <wire x1="30.48" y1="22.86" x2="30.48" y2="17.78" width="0.1524" layer="91"/>
 <wire x1="30.48" y1="17.78" x2="20.32" y2="17.78" width="0.1524" layer="91"/>
 <junction x="20.32" y="17.78"/>
+</segment>
+<segment>
+<wire x1="375.92" y1="-7.62" x2="350.52" y2="-7.62" width="0.1524" layer="91"/>
+<pinref part="JP7" gate="G$1" pin="1"/>
+<label x="350.52" y="-7.62" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="AREF" class="0">
@@ -3215,6 +3224,18 @@ QFN is non-stock</description>
 <wire x1="340.36" y1="154.94" x2="375.92" y2="154.94" width="0.1524" layer="91"/>
 <pinref part="JP22" gate="G$1" pin="1"/>
 <label x="340.36" y="154.94" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="R7" gate="G$1" pin="2"/>
+<pinref part="R8" gate="G$1" pin="1"/>
+<wire x1="20.32" y1="30.48" x2="20.32" y2="33.02" width="0.1524" layer="91"/>
+<pinref part="C7" gate="G$1" pin="1"/>
+<wire x1="20.32" y1="33.02" x2="20.32" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="30.48" x2="30.48" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="33.02" x2="20.32" y2="33.02" width="0.1524" layer="91"/>
+<junction x="20.32" y="33.02"/>
+<wire x1="55.88" y1="33.02" x2="30.48" y2="33.02" width="0.1524" layer="91"/>
+<junction x="30.48" y="33.02"/>
 </segment>
 </net>
 <net name="A2" class="0">
@@ -3453,6 +3474,11 @@ QFN is non-stock</description>
 <label x="17.78" y="53.34" size="1.778" layer="95" rot="R90"/>
 <pinref part="R8" gate="G$1" pin="2"/>
 </segment>
+<segment>
+<wire x1="375.92" y1="-17.78" x2="350.52" y2="-17.78" width="0.1524" layer="91"/>
+<pinref part="JP1" gate="G$1" pin="1"/>
+<label x="350.52" y="-17.78" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="A6" class="0">
 <segment>
@@ -3484,18 +3510,6 @@ QFN is non-stock</description>
 <pinref part="D1" gate="G$1" pin="A"/>
 <wire x1="35.56" y1="144.78" x2="35.56" y2="147.32" width="0.1524" layer="91"/>
 <junction x="35.56" y="147.32"/>
-</segment>
-</net>
-<net name="N$3" class="0">
-<segment>
-<pinref part="R7" gate="G$1" pin="2"/>
-<pinref part="R8" gate="G$1" pin="1"/>
-<wire x1="20.32" y1="30.48" x2="20.32" y2="33.02" width="0.1524" layer="91"/>
-<pinref part="C7" gate="G$1" pin="1"/>
-<wire x1="20.32" y1="33.02" x2="20.32" y2="35.56" width="0.1524" layer="91"/>
-<wire x1="30.48" y1="30.48" x2="30.48" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="30.48" y1="33.02" x2="20.32" y2="33.02" width="0.1524" layer="91"/>
-<junction x="20.32" y="33.02"/>
 </segment>
 </net>
 </nets>
