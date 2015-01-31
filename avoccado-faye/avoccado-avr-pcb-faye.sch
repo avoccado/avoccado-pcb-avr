@@ -2774,7 +2774,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="GND4" library="SparkFun" deviceset="GND" device=""/>
 <part name="P+1" library="SparkFun" deviceset="3.3V" device="" value="3V3"/>
 <part name="GND5" library="SparkFun" deviceset="GND" device=""/>
-<part name="Q2" library="SparkFun-DiscreteSemi" deviceset="MOSFET-NCHANNEL" device="2N7002PW" value="FET"/>
+<part name="Q2" library="SparkFun-DiscreteSemi" deviceset="MOSFET-NCHANNEL" device="BSS123LT1G" value="FET"/>
 <part name="R1" library="SparkFun-Resistors" deviceset="RESISTOR" device="0603" value="1K"/>
 <part name="LDO" library="linear" deviceset="MCP1703" device="CB"/>
 <part name="U2" library="SparkFun" deviceset="MCP73831" device=""/>
@@ -2807,7 +2807,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="TP7" library="SparkFun-Connectors" deviceset="M01" device="NOSILK-KIT"/>
 <part name="TP8" library="SparkFun-Connectors" deviceset="M01" device="NOSILK-KIT"/>
 <part name="JP19" library="SparkFun-Connectors" deviceset="M01" device="PTH" value="M01PTH"/>
-<part name="JP20" library="SparkFun-Connectors" deviceset="M01" device="PTH" value="M01PTH"/>
+<part name="JP20" library="SparkFun-Connectors" deviceset="M01" device="NOSILK-KIT" value="M01NOSILK-KIT"/>
 <part name="JP21" library="SparkFun-Connectors" deviceset="M01" device="PTH" value="M01PTH"/>
 <part name="JP22" library="SparkFun-Connectors" deviceset="M01" device="NOSILK-KIT" value="M01NOSILK-KIT"/>
 <part name="C5" library="SparkFun-Capacitors" deviceset="4.7UF-6.3V-10%(0603)" device="0603" value="4.7uF"/>
@@ -2907,7 +2907,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="TP7" gate="G$1" x="276.86" y="154.94"/>
 <instance part="TP8" gate="G$1" x="276.86" y="147.32"/>
 <instance part="JP19" gate="G$1" x="383.54" y="177.8" rot="R180"/>
-<instance part="JP20" gate="G$1" x="383.54" y="170.18" rot="R180"/>
+<instance part="JP20" gate="G$1" x="408.94" y="170.18" rot="R180"/>
 <instance part="JP21" gate="G$1" x="383.54" y="162.56" rot="R180"/>
 <instance part="JP22" gate="G$1" x="408.94" y="154.94" rot="R180"/>
 <instance part="C5" gate="G$1" x="35.56" y="104.14"/>
@@ -3299,7 +3299,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="MCU" gate="U$1" pin="PC1(ADC1)"/>
 </segment>
 <segment>
-<wire x1="340.36" y1="170.18" x2="375.92" y2="170.18" width="0.1524" layer="91"/>
+<wire x1="340.36" y1="170.18" x2="401.32" y2="170.18" width="0.1524" layer="91"/>
 <pinref part="JP20" gate="G$1" pin="1"/>
 <label x="340.36" y="170.18" size="1.778" layer="95"/>
 </segment>
