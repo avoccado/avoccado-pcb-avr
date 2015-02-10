@@ -3493,6 +3493,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="JP1" library="SparkFun-Connectors" deviceset="M01" device="PTH" value="M01PTH"/>
 <part name="MCU" library="SparkFun-DigitalIC" deviceset="ATMEGA328P_TQFP" device="" value="ATMEGA328P_TQFP"/>
 <part name="JP7" library="SparkFun-Connectors" deviceset="USB" device="-MICROB"/>
+<part name="R12" library="SparkFun-Resistors" deviceset="RESISTOR" device="0402" value="1K"/>
+<part name="R9" library="SparkFun-Resistors" deviceset="RESISTOR" device="0402" value="1K"/>
 </parts>
 <sheets>
 <sheet>
@@ -3594,6 +3596,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="JP1" gate="G$1" x="383.54" y="-17.78" rot="R180"/>
 <instance part="MCU" gate="U$1" x="193.04" y="124.46"/>
 <instance part="JP7" gate="G$1" x="12.7" y="165.1" rot="R180"/>
+<instance part="R12" gate="G$1" x="81.28" y="160.02" rot="R90"/>
+<instance part="R9" gate="G$1" x="81.28" y="147.32" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -3658,7 +3662,12 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <segment>
 <pinref part="R3" gate="G$1" pin="1"/>
 <pinref part="GND3" gate="1" pin="GND"/>
-<wire x1="71.12" y1="154.94" x2="71.12" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="154.94" x2="71.12" y2="137.16" width="0.1524" layer="91"/>
+<pinref part="R9" gate="G$1" pin="1"/>
+<wire x1="71.12" y1="137.16" x2="71.12" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="142.24" x2="81.28" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="137.16" x2="71.12" y2="137.16" width="0.1524" layer="91"/>
+<junction x="71.12" y="137.16"/>
 </segment>
 <segment>
 <pinref part="C4" gate="G$1" pin="2"/>
@@ -4114,6 +4123,10 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="71.12" y1="165.1" x2="71.12" y2="167.64" width="0.1524" layer="91"/>
 <pinref part="U2" gate="G$1" pin="PROG"/>
 <wire x1="71.12" y1="167.64" x2="58.42" y2="167.64" width="0.1524" layer="91"/>
+<pinref part="R12" gate="G$1" pin="2"/>
+<wire x1="71.12" y1="167.64" x2="81.28" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="167.64" x2="81.28" y2="165.1" width="0.1524" layer="91"/>
+<junction x="71.12" y="167.64"/>
 </segment>
 </net>
 <net name="5V" class="0">
@@ -4228,6 +4241,13 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="D1" gate="G$1" pin="A"/>
 <wire x1="35.56" y1="144.78" x2="35.56" y2="147.32" width="0.1524" layer="91"/>
 <junction x="35.56" y="147.32"/>
+</segment>
+</net>
+<net name="N$3" class="0">
+<segment>
+<pinref part="R12" gate="G$1" pin="1"/>
+<pinref part="R9" gate="G$1" pin="2"/>
+<wire x1="81.28" y1="154.94" x2="81.28" y2="152.4" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
