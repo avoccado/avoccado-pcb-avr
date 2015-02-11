@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="20" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -3204,12 +3204,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <packages>
 <package name="TQFP32-08">
 <description>&lt;B&gt;Thin Plasic Quad Flat Package&lt;/B&gt; Grid 0.8 mm</description>
-<wire x1="3.505" y1="3.505" x2="3.505" y2="-3.505" width="0.2032" layer="21"/>
-<wire x1="3.505" y1="-3.505" x2="-3.505" y2="-3.505" width="0.1524" layer="21"/>
-<wire x1="-3.505" y1="-3.505" x2="-3.505" y2="3.15" width="0.2032" layer="21"/>
-<wire x1="-3.15" y1="3.505" x2="3.505" y2="3.505" width="0.2032" layer="21"/>
-<wire x1="-3.15" y1="3.505" x2="-3.505" y2="3.15" width="0.2032" layer="21"/>
-<circle x="-3.6576" y="3.683" radius="0.1524" width="0.2032" layer="21"/>
+<wire x1="-2.95" y1="3.305" x2="-3.305" y2="2.95" width="0.2032" layer="21"/>
+<circle x="-3.6576" y="3.683" radius="0.2" width="0.25" layer="21"/>
 <smd name="1" x="-4.2926" y="2.8" dx="1.27" dy="0.5588" layer="1" stop="no"/>
 <smd name="2" x="-4.2926" y="2" dx="1.27" dy="0.5588" layer="1" stop="no"/>
 <smd name="3" x="-4.2926" y="1.2" dx="1.27" dy="0.5588" layer="1" stop="no"/>
@@ -3308,6 +3304,12 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <rectangle x1="0.45" y1="-4.52" x2="1.95" y2="-3.98" layer="29" rot="R90"/>
 <rectangle x1="1.25" y1="-4.52" x2="2.75" y2="-3.98" layer="29" rot="R90"/>
 <rectangle x1="2.05" y1="-4.52" x2="3.55" y2="-3.98" layer="29" rot="R90"/>
+<wire x1="-3.5" y1="-3.5" x2="-3.5" y2="-2.5" width="0.2" layer="21"/>
+<wire x1="-3.5" y1="-3.5" x2="-2.5" y2="-3.5" width="0.2" layer="21"/>
+<wire x1="3.5" y1="2.5" x2="3.5" y2="3.5" width="0.2" layer="21"/>
+<wire x1="2.5" y1="3.5" x2="3.5" y2="3.5" width="0.2" layer="21"/>
+<wire x1="3.5" y1="-3.5" x2="3.5" y2="-2.5" width="0.2" layer="21"/>
+<wire x1="2.5" y1="-3.5" x2="3.5" y2="-3.5" width="0.2" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -3414,7 +3416,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
 <packages>
 <package name="PAD.02X.02">
-<smd name="P$1" x="0" y="0" dx="0.508" dy="0.508" layer="1"/>
+<smd name="P$1" x="0" y="0" dx="2.54" dy="1.27" layer="1" cream="no"/>
 </package>
 <package name="PAD.03X.03">
 <smd name="P$1" x="0" y="0" dx="0.762" dy="0.762" layer="1" roundness="100" cream="no"/>
@@ -3545,16 +3547,16 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="JP11" library="SparkFun-Connectors" deviceset="M01" device="PTH" value="M01PTH"/>
 <part name="JP12" library="SparkFun-Connectors" deviceset="M01" device="PTH" value="M01PTH"/>
 <part name="JP13" library="SparkFun-Connectors" deviceset="M01" device="PTH" value="M01PTH"/>
-<part name="JP14" library="SparkFun-Connectors" deviceset="M01" device="PTH" value="M01PTH"/>
+<part name="JP14" library="SparkFun-Connectors" deviceset="M01" device="NOSILK-KIT" value="M01NOSILK-KIT"/>
 <part name="JP15" library="SparkFun-Connectors" deviceset="M01" device="NOSILK-KIT" value="M01NOSILK-KIT"/>
 <part name="JP3" library="SparkFun-Connectors" deviceset="M01" device="PTH" value="M01PTH"/>
 <part name="JP17" library="SparkFun-Connectors" deviceset="M01" device="PTH" value="M01PTH"/>
 <part name="JP18" library="SparkFun-Connectors" deviceset="M01" device="PTH" value="M01PTH"/>
 <part name="C2" library="SparkFun" deviceset="CAP" device="0402" value="0.1uF"/>
-<part name="TP1" library="SparkFun-Connectors" deviceset="M01" device="NOSILK-KIT"/>
-<part name="TP6" library="SparkFun-Connectors" deviceset="M01" device="NOSILK-KIT"/>
-<part name="TP7" library="SparkFun-Connectors" deviceset="M01" device="NOSILK-KIT"/>
-<part name="TP8" library="SparkFun-Connectors" deviceset="M01" device="NOSILK-KIT"/>
+<part name="TP1" library="SparkFun-Passives" deviceset="TEST-POINT" device="2"/>
+<part name="TP6" library="SparkFun-Passives" deviceset="TEST-POINT" device="2"/>
+<part name="TP7" library="SparkFun-Passives" deviceset="TEST-POINT" device="2"/>
+<part name="TP8" library="SparkFun-Passives" deviceset="TEST-POINT" device="2"/>
 <part name="JP19" library="SparkFun-Connectors" deviceset="M01" device="PTH" value="M01PTH"/>
 <part name="JP20" library="SparkFun-Connectors" deviceset="M01" device="NOSILK-KIT" value="M01NOSILK-KIT"/>
 <part name="JP21" library="SparkFun-Connectors" deviceset="M01" device="PTH" value="M01PTH"/>
@@ -3576,7 +3578,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="R8" library="SparkFun-Resistors" deviceset="RESISTOR" device="0603" value="1M"/>
 <part name="C7" library="SparkFun" deviceset="CAP" device="0402" value="0.1uF"/>
 <part name="GND10" library="SparkFun" deviceset="GND" device=""/>
-<part name="JP1" library="SparkFun-Connectors" deviceset="M01" device="PTH" value="M01PTH"/>
 <part name="MCU" library="SparkFun-DigitalIC" deviceset="ATMEGA328P_TQFP" device="" value="ATMEGA328P_TQFP"/>
 <part name="JP7" library="SparkFun-Connectors" deviceset="USB" device="-MICROB"/>
 <part name="R12" library="SparkFun-Resistors" deviceset="RESISTOR" device="0402" value="1K"/>
@@ -3584,7 +3585,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="TP5" library="SparkFun-Passives" deviceset="TEST-POINT" device="3X5"/>
 <part name="TP3" library="SparkFun-Passives" deviceset="TEST-POINT" device="3X5"/>
 <part name="TP4" library="SparkFun-Passives" deviceset="TEST-POINT" device="3"/>
-<part name="JP16" library="SparkFun-Connectors" deviceset="M01" device="SMD-4.5X1.5"/>
+<part name="TP9" library="SparkFun-Passives" deviceset="TEST-POINT" device="2"/>
 </parts>
 <sheets>
 <sheet>
@@ -3649,7 +3650,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="JP11" gate="G$1" x="383.54" y="68.58" rot="R180"/>
 <instance part="JP12" gate="G$1" x="123.19" y="60.198"/>
 <instance part="JP13" gate="G$1" x="123.19" y="57.658"/>
-<instance part="JP14" gate="G$1" x="123.19" y="55.118"/>
+<instance part="JP14" gate="G$1" x="74.93" y="55.118"/>
 <instance part="JP15" gate="G$1" x="100.33" y="52.578"/>
 <instance part="JP3" gate="G$1" x="383.54" y="137.16" rot="R180"/>
 <instance part="JP17" gate="G$1" x="383.54" y="53.34" rot="R180"/>
@@ -3683,7 +3684,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="R8" gate="G$1" x="20.32" y="40.64" rot="R90"/>
 <instance part="C7" gate="G$1" x="30.48" y="25.4"/>
 <instance part="GND10" gate="1" x="20.32" y="12.7"/>
-<instance part="JP1" gate="G$1" x="383.54" y="-17.78" rot="R180"/>
 <instance part="MCU" gate="U$1" x="193.04" y="124.46"/>
 <instance part="JP7" gate="G$1" x="12.7" y="165.1" rot="R180"/>
 <instance part="R12" gate="G$1" x="81.28" y="160.02" rot="R90"/>
@@ -3691,7 +3691,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="TP5" gate="G$1" x="99.06" y="119.38"/>
 <instance part="TP3" gate="G$1" x="99.06" y="103.124"/>
 <instance part="TP4" gate="G$1" x="18.288" y="177.8" rot="R180"/>
-<instance part="JP16" gate="G$1" x="383.54" y="116.84" rot="R180"/>
+<instance part="TP9" gate="G$1" x="276.86" y="139.7"/>
 </instances>
 <busses>
 </busses>
@@ -3798,6 +3798,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="375.92" y1="137.16" x2="350.52" y2="137.16" width="0.1524" layer="91"/>
 <pinref part="JP3" gate="G$1" pin="1"/>
 <label x="350.52" y="137.16" size="1.778" layer="95"/>
+<label x="251.46" y="139.7" size="1.778" layer="95"/>
 </segment>
 <segment>
 <wire x1="375.92" y1="25.4" x2="350.52" y2="25.4" width="0.1524" layer="91"/>
@@ -3833,6 +3834,10 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="30.48" y1="22.86" x2="30.48" y2="17.78" width="0.1524" layer="91"/>
 <wire x1="30.48" y1="17.78" x2="20.32" y2="17.78" width="0.1524" layer="91"/>
 <junction x="20.32" y="17.78"/>
+</segment>
+<segment>
+<wire x1="276.86" y1="139.7" x2="251.46" y2="139.7" width="0.1524" layer="91"/>
+<pinref part="TP9" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="AREF" class="0">
@@ -3902,7 +3907,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="MCU" gate="U$1" pin="PB3(MOSI/OC2)"/>
 </segment>
 <segment>
-<wire x1="156.21" y1="55.118" x2="130.81" y2="55.118" width="0.1524" layer="91"/>
+<wire x1="156.21" y1="55.118" x2="82.55" y2="55.118" width="0.1524" layer="91"/>
 <pinref part="JP14" gate="G$1" pin="1"/>
 <label x="156.21" y="55.118" size="1.778" layer="95"/>
 </segment>
@@ -4009,7 +4014,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="MCU" gate="U$1" pin="PB0(ICP)"/>
 </segment>
 <segment>
-<wire x1="259.08" y1="147.32" x2="284.48" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="259.08" y1="147.32" x2="276.86" y2="147.32" width="0.1524" layer="91"/>
 <pinref part="TP8" gate="G$1" pin="1"/>
 <label x="259.08" y="147.32" size="1.778" layer="95"/>
 </segment>
@@ -4141,7 +4146,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="MCU" gate="U$1" pin="PD5(T1)"/>
 </segment>
 <segment>
-<wire x1="259.08" y1="170.18" x2="284.48" y2="170.18" width="0.1524" layer="91"/>
+<wire x1="259.08" y1="170.18" x2="276.86" y2="170.18" width="0.1524" layer="91"/>
 <pinref part="TP1" gate="G$1" pin="1"/>
 <label x="259.08" y="170.18" size="1.778" layer="95"/>
 </segment>
@@ -4153,7 +4158,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="MCU" gate="U$1" pin="PD6(AIN0)"/>
 </segment>
 <segment>
-<wire x1="259.08" y1="162.56" x2="284.48" y2="162.56" width="0.1524" layer="91"/>
+<wire x1="259.08" y1="162.56" x2="276.86" y2="162.56" width="0.1524" layer="91"/>
 <pinref part="TP6" gate="G$1" pin="1"/>
 <label x="259.08" y="162.56" size="1.778" layer="95"/>
 </segment>
@@ -4165,7 +4170,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="MCU" gate="U$1" pin="PD7(AIN1)"/>
 </segment>
 <segment>
-<wire x1="259.08" y1="154.94" x2="284.48" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="259.08" y1="154.94" x2="276.86" y2="154.94" width="0.1524" layer="91"/>
 <pinref part="TP7" gate="G$1" pin="1"/>
 <label x="259.08" y="154.94" size="1.778" layer="95"/>
 </segment>
@@ -4280,14 +4285,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <label x="96.52" y="91.44" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="375.92" y1="127" x2="365.76" y2="127" width="0.2032" layer="91"/>
 <pinref part="JP23" gate="G$1" pin="1"/>
 <label x="350.52" y="127" size="1.778" layer="95"/>
-<pinref part="JP16" gate="G$1" pin="1"/>
-<wire x1="365.76" y1="127" x2="350.52" y2="127" width="0.2032" layer="91"/>
-<wire x1="375.92" y1="116.84" x2="365.76" y2="116.84" width="0.1524" layer="91"/>
-<wire x1="365.76" y1="116.84" x2="365.76" y2="127" width="0.1524" layer="91"/>
-<junction x="365.76" y="127"/>
+<wire x1="375.92" y1="127" x2="350.52" y2="127" width="0.2032" layer="91"/>
 </segment>
 </net>
 <net name="VBAT" class="1">
@@ -4314,11 +4314,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="20.32" y1="53.34" x2="20.32" y2="45.72" width="0.1524" layer="91"/>
 <label x="17.78" y="53.34" size="1.778" layer="95" rot="R90"/>
 <pinref part="R8" gate="G$1" pin="2"/>
-</segment>
-<segment>
-<wire x1="375.92" y1="-17.78" x2="350.52" y2="-17.78" width="0.1524" layer="91"/>
-<pinref part="JP1" gate="G$1" pin="1"/>
-<label x="350.52" y="-17.78" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="A6" class="0">
