@@ -212,7 +212,6 @@ ETEMU.COM 2015</text>
 <wire x1="8.382" y1="6.858" x2="8.382" y2="7.112" width="0.3048" layer="21"/>
 <text x="21.29" y="13.384" size="1.27" layer="21" ratio="15" rot="SR90" align="center-right">R</text>
 <rectangle x1="10.668" y1="11.684" x2="18.796" y2="19.812" layer="41"/>
-<text x="18.996" y="1.289" size="1.143" layer="21" font="vector" ratio="15" rot="R180" align="center-left">CHG</text>
 <circle x="17.272" y="8.644" radius="1.143" width="0.3683" layer="21"/>
 <circle x="22.86" y="1.024" radius="1.143" width="0.3683" layer="21"/>
 <circle x="9.652" y="1.024" radius="1.143" width="0.3683" layer="21"/>
@@ -769,8 +768,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <param name="slThermalsForVias" value="0"/>
 <param name="dpMaxLengthDifference" value="10mm"/>
 <param name="dpGapFactor" value="2.5"/>
-<param name="checkGrid" value="1"/>
-<param name="checkAngle" value="1"/>
+<param name="checkGrid" value="0"/>
+<param name="checkAngle" value="0"/>
 <param name="checkFont" value="1"/>
 <param name="checkRestrict" value="0"/>
 <param name="useDiameter" value="13"/>
@@ -943,11 +942,11 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <element name="JP7" library="SparkFun-Connectors" package="USB-MICROB" value="USB-MICROB" x="16.764" y="1.524" smashed="yes" rot="MR0">
 <attribute name="PROD_ID" value="CONN-09505" x="16.764" y="1.524" size="1.778" layer="28" font="vector" ratio="15" rot="MR0" display="off"/>
 </element>
-<element name="R12" library="SparkFun-Resistors" package="0402-RES" value="1K" x="14.732" y="0.762" smashed="yes">
-<attribute name="VALUE" x="14.4145" y="1.397" size="0.4064" layer="27"/>
+<element name="R12" library="SparkFun-Resistors" package="0402-RES" value="1K" x="15.748" y="0.762" smashed="yes">
+<attribute name="VALUE" x="15.4305" y="1.397" size="0.4064" layer="27"/>
 </element>
-<element name="R9" library="SparkFun-Resistors" package="0402-RES" value="1K" x="12.446" y="0.762" smashed="yes">
-<attribute name="VALUE" x="12.1285" y="1.397" size="0.4064" layer="27"/>
+<element name="R9" library="SparkFun-Resistors" package="0402-RES" value="1K" x="12.954" y="0.762" smashed="yes">
+<attribute name="VALUE" x="12.6365" y="1.397" size="0.4064" layer="27"/>
 </element>
 <element name="TP5" library="SparkFun-Passives" package="PAD.03X.05" value="TEST-POINT3X5" x="9.652" y="6.096" rot="MR0"/>
 <element name="TP3" library="SparkFun-Passives" package="PAD.03X.05" value="TEST-POINT3X5" x="12.192" y="6.096" rot="MR0"/>
@@ -1553,7 +1552,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <contactref element="R12" pad="2"/>
 <wire x1="17.968" y1="2.5099" x2="17.968" y2="1.204" width="0.3048" layer="1"/>
 <wire x1="17.968" y1="1.204" x2="17.526" y2="0.762" width="0.3048" layer="1"/>
-<wire x1="17.526" y1="0.762" x2="15.382" y2="0.762" width="0.3048" layer="1"/>
+<wire x1="17.526" y1="0.762" x2="16.398" y2="0.762" width="0.3048" layer="1"/>
 </signal>
 <signal name="5V">
 <contactref element="U2" pad="4"/>
@@ -1661,7 +1660,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <signal name="N$3">
 <contactref element="R12" pad="1"/>
 <contactref element="R9" pad="2"/>
-<wire x1="14.082" y1="0.762" x2="13.096" y2="0.762" width="0.3048" layer="1"/>
+<wire x1="15.098" y1="0.762" x2="13.604" y2="0.762" width="0.3048" layer="1"/>
 </signal>
 </signals>
 </board>
