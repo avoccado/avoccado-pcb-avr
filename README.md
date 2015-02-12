@@ -33,7 +33,7 @@ Plated half holes are nice for SMD piggybacking the hole board. Mind the test po
 
 Faye
 ----------------
-![IMG board screenshot](avoccado-faye/avoccado-faye.png)
+![IMG board screenshot](avoccado-faye/avoccado-faye201502122106.png)
 Consistent 100 mil grid for all pin headers, additional test points (all conforming the 100 mil grid).
 Tighter spacing with 0402 parts now close to the MCU and border of the board.
 Battery voltage fed into ADC portpin through high impedance voltage divider to estimate SOC with the MCU.
