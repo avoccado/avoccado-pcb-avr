@@ -7048,7 +7048,7 @@ Source: AVX .. aphvc.pdf</description>
 <part name="JP9" library="SparkFun-Connectors" deviceset="M01" device="PTH" value="M01PTH"/>
 <part name="JP10" library="SparkFun-Connectors" deviceset="M01" device="PTH" value="M01PTH"/>
 <part name="JP11" library="SparkFun-Connectors" deviceset="M01" device="PTH" value="M01PTH"/>
-<part name="JP12" library="SparkFun-Connectors" deviceset="M01" device="PTH" value="M01PTH"/>
+<part name="JP12" library="SparkFun-Connectors" deviceset="M01" device="NOSILK-KIT" value="M01NOSILK-KIT"/>
 <part name="JP13" library="SparkFun-Connectors" deviceset="M01" device="PTH" value="M01PTH"/>
 <part name="JP14" library="SparkFun-Connectors" deviceset="M01" device="NOSILK-KIT" value="M01NOSILK-KIT"/>
 <part name="JP15" library="SparkFun-Connectors" deviceset="M01" device="NOSILK-KIT" value="M01NOSILK-KIT"/>
@@ -7610,6 +7610,15 @@ Source: AVX .. aphvc.pdf</description>
 <pinref part="JP5" gate="G$1" pin="1"/>
 <label x="101.6" y="27.94" size="1.778" layer="95"/>
 </segment>
+<segment>
+<wire x1="-53.34" y1="147.32" x2="-38.1" y2="147.32" width="0.1524" layer="91"/>
+<pinref part="U1" gate="G$1" pin="SCL/SCLK"/>
+<pinref part="R10" gate="G$1" pin="1"/>
+<wire x1="-55.88" y1="142.24" x2="-38.1" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="-38.1" y1="142.24" x2="-38.1" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="-38.1" y1="147.32" x2="-38.1" y2="149.86" width="0.1524" layer="91"/>
+<junction x="-38.1" y="147.32"/>
+</segment>
 </net>
 <net name="A4" class="0">
 <segment>
@@ -7621,6 +7630,14 @@ Source: AVX .. aphvc.pdf</description>
 <wire x1="101.6" y1="25.4" x2="116.84" y2="25.4" width="0.1524" layer="91"/>
 <pinref part="JP5" gate="G$1" pin="2"/>
 <label x="101.6" y="25.4" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="-25.4" y1="137.16" x2="-5.08" y2="137.16" width="0.1524" layer="91"/>
+<pinref part="U1" gate="G$1" pin="SDA/SDI"/>
+<pinref part="R11" gate="G$1" pin="1"/>
+<wire x1="-55.88" y1="137.16" x2="-25.4" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="-25.4" y1="137.16" x2="-25.4" y2="149.86" width="0.1524" layer="91"/>
+<junction x="-25.4" y="137.16"/>
 </segment>
 </net>
 <net name="A3" class="0">
@@ -7938,22 +7955,6 @@ Source: AVX .. aphvc.pdf</description>
 <pinref part="R12" gate="G$1" pin="1"/>
 <pinref part="R9" gate="G$1" pin="2"/>
 <wire x1="81.28" y1="154.94" x2="81.28" y2="152.4" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$4" class="0">
-<segment>
-<pinref part="U1" gate="G$1" pin="SCL/SCLK"/>
-<pinref part="R10" gate="G$1" pin="1"/>
-<wire x1="-55.88" y1="142.24" x2="-38.1" y2="142.24" width="0.1524" layer="91"/>
-<wire x1="-38.1" y1="142.24" x2="-38.1" y2="149.86" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$5" class="0">
-<segment>
-<pinref part="U1" gate="G$1" pin="SDA/SDI"/>
-<pinref part="R11" gate="G$1" pin="1"/>
-<wire x1="-55.88" y1="137.16" x2="-25.4" y2="137.16" width="0.1524" layer="91"/>
-<wire x1="-25.4" y1="137.16" x2="-25.4" y2="149.86" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$7" class="0">
