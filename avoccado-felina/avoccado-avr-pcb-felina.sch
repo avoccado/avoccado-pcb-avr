@@ -3406,33 +3406,37 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="0.8" y1="-0.4" x2="0.7" y2="-0.3" width="0.1" layer="51"/>
 <wire x1="0.7" y1="-0.3" x2="0.7" y2="-0.2" width="0.1" layer="51"/>
 <smd name="1" x="-2.1" y="1.2567" dx="1.016" dy="0.254" layer="1" roundness="100" rot="R180"/>
-<smd name="2" x="-2.1" y="0.75" dx="1.143" dy="0.254" layer="1" roundness="100" rot="R180"/>
-<smd name="3" x="-2.1" y="0.25" dx="1.143" dy="0.254" layer="1" roundness="100" rot="R180"/>
-<smd name="4" x="-2.1" y="-0.25" dx="1.143" dy="0.254" layer="1" roundness="100" rot="R180"/>
-<smd name="5" x="-2.1" y="-0.75" dx="1.143" dy="0.254" layer="1" roundness="100" rot="R180"/>
+<smd name="2" x="-2.1635" y="0.75" dx="1.143" dy="0.254" layer="1" roundness="100" rot="R180"/>
+<smd name="3" x="-2.1635" y="0.25" dx="1.143" dy="0.254" layer="1" roundness="100" rot="R180"/>
+<smd name="4" x="-2.1635" y="-0.25" dx="1.143" dy="0.254" layer="1" roundness="100" rot="R180"/>
+<smd name="5" x="-2.1635" y="-0.75" dx="1.143" dy="0.254" layer="1" roundness="100" rot="R180"/>
 <smd name="6" x="-2.1" y="-1.25" dx="1.016" dy="0.254" layer="1" roundness="100" rot="R180"/>
 <smd name="7" x="-1.25" y="-2.1" dx="1.016" dy="0.254" layer="1" roundness="100" rot="R90"/>
-<smd name="8" x="-0.75" y="-2.1" dx="1.143" dy="0.254" layer="1" roundness="100" rot="R90"/>
-<smd name="9" x="-0.25" y="-2.1" dx="1.143" dy="0.254" layer="1" roundness="100" rot="R90"/>
-<smd name="10" x="0.25" y="-2.1" dx="1.143" dy="0.254" layer="1" roundness="100" rot="R90"/>
-<smd name="11" x="0.75" y="-2.1" dx="1.143" dy="0.254" layer="1" roundness="100" rot="R90"/>
+<smd name="8" x="-0.75" y="-2.1635" dx="1.143" dy="0.254" layer="1" roundness="100" rot="R90"/>
+<smd name="9" x="-0.25" y="-2.1635" dx="1.143" dy="0.254" layer="1" roundness="100" rot="R90"/>
+<smd name="10" x="0.25" y="-2.1635" dx="1.143" dy="0.254" layer="1" roundness="100" rot="R90"/>
+<smd name="11" x="0.75" y="-2.1635" dx="1.143" dy="0.254" layer="1" roundness="100" rot="R90"/>
 <smd name="12" x="1.25" y="-2.1" dx="1.016" dy="0.254" layer="1" roundness="100" rot="R90"/>
 <smd name="13" x="2.1" y="-1.25" dx="1.016" dy="0.254" layer="1" roundness="100" rot="R180"/>
-<smd name="14" x="2.1" y="-0.75" dx="1.143" dy="0.254" layer="1" roundness="100" rot="R180"/>
-<smd name="15" x="2.1" y="-0.25" dx="1.143" dy="0.254" layer="1" roundness="100" rot="R180"/>
-<smd name="16" x="2.1" y="0.25" dx="1.143" dy="0.254" layer="1" roundness="100" rot="R180"/>
-<smd name="17" x="2.1" y="0.75" dx="1.143" dy="0.254" layer="1" roundness="100" rot="R180"/>
+<smd name="14" x="2.1635" y="-0.75" dx="1.143" dy="0.254" layer="1" roundness="100" rot="R180"/>
+<smd name="15" x="2.1635" y="-0.25" dx="1.143" dy="0.254" layer="1" roundness="100" rot="R180"/>
+<smd name="16" x="2.1635" y="0.25" dx="1.143" dy="0.254" layer="1" roundness="100" rot="R180"/>
+<smd name="17" x="2.1635" y="0.75" dx="1.143" dy="0.254" layer="1" roundness="100" rot="R180"/>
 <smd name="18" x="2.1" y="1.25" dx="1.016" dy="0.254" layer="1" roundness="100" rot="R180"/>
 <smd name="19" x="1.25" y="2.1" dx="1.016" dy="0.254" layer="1" roundness="100" rot="R90"/>
-<smd name="20" x="0.75" y="2.1" dx="1.143" dy="0.254" layer="1" roundness="100" rot="R90"/>
-<smd name="21" x="0.25" y="2.1" dx="1.143" dy="0.254" layer="1" roundness="100" rot="R90"/>
-<smd name="22" x="-0.25" y="2.1" dx="1.143" dy="0.254" layer="1" roundness="100" rot="R90"/>
-<smd name="23" x="-0.75" y="2.1" dx="1.143" dy="0.254" layer="1" roundness="100" rot="R90"/>
+<smd name="20" x="0.75" y="2.1635" dx="1.143" dy="0.254" layer="1" roundness="100" rot="R90"/>
+<smd name="21" x="0.25" y="2.1635" dx="1.143" dy="0.254" layer="1" roundness="100" rot="R90"/>
+<smd name="22" x="-0.25" y="2.1635" dx="1.143" dy="0.254" layer="1" roundness="100" rot="R90"/>
+<smd name="23" x="-0.75" y="2.1635" dx="1.143" dy="0.254" layer="1" roundness="100" rot="R90"/>
 <smd name="24" x="-1.25" y="2.1" dx="1.016" dy="0.254" layer="1" roundness="100" rot="R90"/>
-<smd name="P$1" x="0" y="0" dx="1.27" dy="1.27" layer="1"/>
+<smd name="P$1" x="0" y="0" dx="1.6256" dy="1.6256" layer="1" cream="no"/>
 <text x="-0.6" y="1" size="0.254" layer="51">Y</text>
 <text x="1.1" y="0.4" size="0.254" layer="51">X</text>
 <text x="-0.1" y="-0.6" size="0.254" layer="51">Z</text>
+<rectangle x1="-0.762" y1="0.254" x2="-0.254" y2="0.762" layer="31"/>
+<rectangle x1="-0.762" y1="-0.762" x2="-0.254" y2="-0.254" layer="31"/>
+<rectangle x1="0.254" y1="-0.762" x2="0.762" y2="-0.254" layer="31"/>
+<rectangle x1="0.254" y1="0.254" x2="0.762" y2="0.762" layer="31"/>
 </package>
 </packages>
 <symbols>
@@ -17067,7 +17071,7 @@ Various fiducial points for machine vision alignment.</description>
 <classes>
 <class number="0" name="default" width="0" drill="0">
 </class>
-<class number="1" name="vcc" width="0.254" drill="0">
+<class number="1" name="vcc" width="0.2032" drill="0">
 </class>
 <class number="3" name="usbvcc" width="0.2032" drill="0.6096">
 <clearance class="3" value="0.1524"/>
