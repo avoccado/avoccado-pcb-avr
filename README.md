@@ -39,6 +39,17 @@ Tighter spacing with 0402 parts now close to the MCU and border of the board.
 Battery voltage fed into ADC portpin through high impedance voltage divider to estimate SOC with the MCU.
 Optional micro USB socket on the bottom. Data lines not used as of now due to routing constraints, only used for power and charging LiPo batteries.
 
+Felina
+----------------
+![IMG board screenshot](avoccado-felina/avoccado-avr-pcb-felina.png)
+InvenSense MPU6000 / MPU6050 QFN package on board instead of peripheral daughter board. Header for peripheral board still available. Slim rectangular design, slightly longer due to additional parts for onboard MPU, thus only 10 PCBs per panel instead of the usual 16.
+Battery voltage fed into ADC portpin through high impedance voltage divider to estimate SOC with the MCU.
+Optional: Micro USB female on bottom side for charging
+Optional: V-USB components with 2K pullup on D- to enable USB firmware usage. (needs airwire for one data line) 
+Attention: V-USB uses same D2 IRQ line as MPU6050.
+Consistent 100 mil grid for all pin headers, additional test points, SMD pad for vibration motor output.
+
+
 Panels 
 ----------------
 ![IMG board screenshot](avoccado-nora/nora2-panel/avoccado-nora2-panel-top-0.png)
