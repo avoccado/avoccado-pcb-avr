@@ -17203,9 +17203,9 @@ Various fiducial points for machine vision alignment.</description>
 <text x="341.63" y="171.958" size="1.778" layer="91">ICSP header</text>
 <text x="81.28" y="386.08" size="1.778" layer="91">R13, R14, R15 optional for v-usb mode. note: D2 also used at MPU6050</text>
 <text x="149.86" y="251.46" size="6.4516" layer="97" ratio="6">Power distribution</text>
-<text x="149.86" y="25.4" size="6.4516" layer="97" ratio="6">main controller</text>
+<text x="149.86" y="25.4" size="6.4516" layer="97" ratio="6">Main controller</text>
 <text x="439.42" y="25.4" size="6.4516" layer="97" ratio="6">TP and headers</text>
-<text x="723.9" y="25.4" size="6.4516" layer="97" ratio="6">radio and MEMS connections</text>
+<text x="723.9" y="25.4" size="6.4516" layer="97" ratio="6">peripheral connections</text>
 <text x="723.9" y="251.46" size="6.4516" layer="97" ratio="6">misc</text>
 <text x="439.42" y="251.46" size="6.4516" layer="97" ratio="6">MEMS</text>
 <rectangle x1="93.98" y1="330.2" x2="132.08" y2="347.98" layer="98"/>
@@ -17214,6 +17214,13 @@ Various fiducial points for machine vision alignment.</description>
 <text x="162.56" y="299.72" size="1.778" layer="98">Needs to be bridged to D7 with an air wire for v-usb</text>
 <text x="175.26" y="381" size="1.778" layer="98">R3 determines the maximum charge current, 2K for 500 mA</text>
 <text x="609.6" y="251.46" size="1.778" layer="98">Fiducials 1 mm round</text>
+<text x="614.68" y="304.8" size="6.4516" layer="97">CC-BY-SA 4.0 Avoccado°
+
+Creative Commons ShareAlike 4.0 International
+https://creativecommons.org/licenses/by-sa/4.0/ 
+
+contact@avoccado.cc
+http://avoccado.cc</text>
 </plain>
 <instances>
 <instance part="C10" gate="G$1" x="91.44" y="269.24"/>
@@ -18177,4 +18184,10 @@ Various fiducial points for machine vision alignment.</description>
 </errors>
 </schematic>
 </drawing>
+<compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
+</compatibility>
 </eagle>

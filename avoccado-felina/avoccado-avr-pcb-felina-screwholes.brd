@@ -194,7 +194,7 @@
 <text x="38.472" y="12.581" size="1.27" layer="22" ratio="15" rot="SMR270" align="top-left">VC</text>
 <text x="14.591" y="6.718" size="1.0668" layer="21" ratio="15" align="top-left">FELINA</text>
 <text x="14.491146875" y="3.6990625" size="1.016" layer="21" ratio="15" rot="SR0" align="top-left">avoccado.cc</text>
-<circle x="47.917" y="19.152" radius="1.2" width="1" layer="21"/>
+<circle x="71.917" y="15.152" radius="1.2" width="1" layer="21"/>
 <wire x1="1.5" y1="12.787" x2="1.5" y2="3.787" width="1" layer="46"/>
 <wire x1="1.5" y1="0.5" x2="1.5" y2="-0.5" width="1" layer="46"/>
 <wire x1="1.5" y1="-0.5" x2="47.5" y2="-0.5" width="1" layer="46"/>
