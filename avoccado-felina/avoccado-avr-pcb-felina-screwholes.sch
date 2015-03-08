@@ -2121,8 +2121,6 @@ Manufacturer: Hirose&lt;br&gt;&lt;br&gt;
 <smd name="VBUS1" x="2.8" y="1.3" dx="0.4" dy="1.6" layer="1" rot="R90"/>
 <smd name="ID1" x="2.8" y="-0.65" dx="0.4" dy="1.6" layer="1" rot="R90"/>
 <smd name="GND1" x="2.8" y="-1.3" dx="0.4" dy="1.6" layer="1" rot="R90"/>
-<hole x="2.15" y="2" drill="0.8"/>
-<hole x="2.15" y="-2" drill="0.8"/>
 <rectangle x1="-0.75" y1="2.784" x2="0.75" y2="4.584" layer="31"/>
 <rectangle x1="-0.35" y1="-0.75" x2="0.35" y2="0.75" layer="31"/>
 <rectangle x1="-0.75" y1="-4.584" x2="0.75" y2="-2.784" layer="31"/>
@@ -2143,6 +2141,7 @@ Manufacturer: Hirose&lt;br&gt;&lt;br&gt;
 <smd name="SHIELD1" x="0" y="3.7" dx="1.8" dy="1.5" layer="1" rot="R90" stop="no" cream="no"/>
 <smd name="SHIELD3" x="0" y="0" dx="2.5" dy="1.5" layer="1" rot="R90" stop="no" cream="no"/>
 <smd name="SHIELD2" x="0" y="-3.7" dx="1.8" dy="1.5" layer="1" rot="R90" stop="no" cream="no"/>
+<hole x="2.15" y="-2" drill="0.8"/>
 </package>
 </packages>
 <symbols>
@@ -16739,12 +16738,17 @@ Various fiducial points for machine vision alignment.</description>
 <part name="LOGO1" library="SparkFun-Aesthetics" deviceset="OSHW-LOGO" device="S"/>
 <part name="FID1" library="SparkFun-Aesthetics" deviceset="FIDUCIAL" device="UFIDUCIAL"/>
 <part name="FID3" library="SparkFun-Aesthetics" deviceset="FIDUCIAL" device="UFIDUCIAL"/>
-<part name="FID4" library="SparkFun-Aesthetics" deviceset="FIDUCIAL" device="UFIDUCIAL"/>
 <part name="JP22" library="SparkFun-Connectors" deviceset="USB_MICROB_PLUG" device="CONN-11752"/>
 <part name="GND16" library="SparkFun" deviceset="GND" device=""/>
 <part name="D2" library="SparkFun" deviceset="LED" device="0603" value="LED"/>
 <part name="GND17" library="SparkFun" deviceset="GND" device=""/>
 <part name="R9" library="rcl" deviceset="R-EU_" device="R0402" value="2K"/>
+<part name="FID4" library="SparkFun-Aesthetics" deviceset="FIDUCIAL" device="UFIDUCIAL"/>
+<part name="FID5" library="SparkFun-Aesthetics" deviceset="FIDUCIAL" device="UFIDUCIAL"/>
+<part name="FID6" library="SparkFun-Aesthetics" deviceset="FIDUCIAL" device="UFIDUCIAL"/>
+<part name="FID7" library="SparkFun-Aesthetics" deviceset="FIDUCIAL" device="UFIDUCIAL"/>
+<part name="FID8" library="SparkFun-Aesthetics" deviceset="FIDUCIAL" device="UFIDUCIAL"/>
+<part name="FID9" library="SparkFun-Aesthetics" deviceset="FIDUCIAL" device="UFIDUCIAL"/>
 </parts>
 <sheets>
 <sheet>
@@ -16906,12 +16910,17 @@ http://avoccado.cc</text>
 <instance part="LOGO1" gate="G$1" x="800.1" y="276.86"/>
 <instance part="FID1" gate="G$1" x="619.76" y="246.38"/>
 <instance part="FID3" gate="G$1" x="627.38" y="246.38"/>
-<instance part="FID4" gate="G$1" x="635" y="246.38"/>
 <instance part="JP22" gate="G$1" x="55.88" y="360.68" rot="R180"/>
 <instance part="GND16" gate="1" x="43.18" y="353.06"/>
-<instance part="D2" gate="G$1" x="180.34" y="342.9" rot="MR0"/>
-<instance part="GND17" gate="1" x="180.34" y="327.66"/>
-<instance part="R9" gate="G$1" x="180.34" y="355.6" rot="R90"/>
+<instance part="D2" gate="G$1" x="180.34" y="368.3" rot="MR0"/>
+<instance part="GND17" gate="1" x="180.34" y="314.96"/>
+<instance part="R9" gate="G$1" x="180.34" y="327.66" rot="R90"/>
+<instance part="FID4" gate="G$1" x="635" y="246.38"/>
+<instance part="FID5" gate="G$1" x="642.62" y="246.38"/>
+<instance part="FID6" gate="G$1" x="612.14" y="241.3"/>
+<instance part="FID7" gate="G$1" x="619.76" y="241.3"/>
+<instance part="FID8" gate="G$1" x="627.38" y="241.3"/>
+<instance part="FID9" gate="G$1" x="635" y="241.3"/>
 </instances>
 <busses>
 </busses>
@@ -17104,9 +17113,9 @@ http://avoccado.cc</text>
 <wire x1="43.18" y1="360.68" x2="43.18" y2="355.6" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="D2" gate="G$1" pin="C"/>
 <pinref part="GND17" gate="1" pin="GND"/>
-<wire x1="180.34" y1="337.82" x2="180.34" y2="330.2" width="0.1524" layer="91"/>
+<pinref part="R9" gate="G$1" pin="1"/>
+<wire x1="180.34" y1="317.5" x2="180.34" y2="322.58" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="AREF" class="0">
@@ -17568,8 +17577,7 @@ http://avoccado.cc</text>
 <wire x1="76.2" y1="363.22" x2="76.2" y2="355.6" width="0.1524" layer="91"/>
 <pinref part="JP22" gate="G$1" pin="VCC"/>
 <wire x1="76.2" y1="355.6" x2="63.5" y2="355.6" width="0.1524" layer="91"/>
-<pinref part="R9" gate="G$1" pin="2"/>
-<wire x1="180.34" y1="360.68" x2="180.34" y2="370.84" width="0.1524" layer="91"/>
+<pinref part="D2" gate="G$1" pin="A"/>
 <junction x="180.34" y="370.84"/>
 </segment>
 <segment>
@@ -17734,9 +17742,9 @@ http://avoccado.cc</text>
 </net>
 <net name="N$3" class="0">
 <segment>
-<pinref part="D2" gate="G$1" pin="A"/>
-<pinref part="R9" gate="G$1" pin="1"/>
-<wire x1="180.34" y1="345.44" x2="180.34" y2="350.52" width="0.1524" layer="91"/>
+<pinref part="R9" gate="G$1" pin="2"/>
+<pinref part="D2" gate="G$1" pin="C"/>
+<wire x1="180.34" y1="363.22" x2="180.34" y2="332.74" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
