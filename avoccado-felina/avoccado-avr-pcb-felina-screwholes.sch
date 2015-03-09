@@ -16753,7 +16753,7 @@ Various fiducial points for machine vision alignment.</description>
 <sheets>
 <sheet>
 <plain>
-<text x="650.24" y="96.52" size="1.778" layer="91" rot="R180">NRF24L01+ board header SPI (IRQ at A7)</text>
+<text x="650.24" y="96.52" size="1.778" layer="91" rot="R180">NRF24L01+ board header SPI (IRQ at ADC7 / A7)</text>
 <text x="741.68" y="99.06" size="1.778" layer="91" rot="R180">MPU6050 minimal header I2C</text>
 <text x="175.26" y="162.56" size="1.778" layer="91">AtMega 328p</text>
 <text x="193.04" y="386.08" size="1.778" layer="91">LiPo 1c charge IC</text>
@@ -16792,11 +16792,11 @@ http://avoccado.cc</text>
 <attribute name="VALUE" x="155.956" y="99.949" size="1.778" layer="96"/>
 </instance>
 <instance part="GND1" gate="1" x="154.94" y="93.98"/>
-<instance part="C1" gate="G$1" x="149.86" y="134.62" smashed="yes" rot="R180">
-<attribute name="NAME" x="150.876" y="134.747" size="1.778" layer="95"/>
-<attribute name="VALUE" x="150.876" y="129.921" size="1.778" layer="96"/>
+<instance part="C1" gate="G$1" x="134.62" y="134.62" smashed="yes" rot="R180">
+<attribute name="NAME" x="135.636" y="134.747" size="1.778" layer="95"/>
+<attribute name="VALUE" x="135.636" y="129.921" size="1.778" layer="96"/>
 </instance>
-<instance part="GND7" gate="1" x="149.86" y="124.46"/>
+<instance part="GND7" gate="1" x="134.62" y="124.46"/>
 <instance part="GND30" gate="1" x="63.5" y="248.92"/>
 <instance part="GND32" gate="1" x="40.64" y="248.92"/>
 <instance part="P+11" gate="G$1" x="142.24" y="170.18"/>
@@ -16946,7 +16946,7 @@ http://avoccado.cc</text>
 <pinref part="GND1" gate="1" pin="GND"/>
 </segment>
 <segment>
-<wire x1="149.86" y1="127" x2="149.86" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="127" x2="134.62" y2="132.08" width="0.1524" layer="91"/>
 <pinref part="C1" gate="G$1" pin="1"/>
 <pinref part="GND7" gate="1" pin="GND"/>
 </segment>
@@ -17096,6 +17096,7 @@ http://avoccado.cc</text>
 <segment>
 <wire x1="377.19" y1="148.844" x2="310.134" y2="148.844" width="0.1524" layer="91"/>
 <pinref part="JP5" gate="G$1" pin="1"/>
+<label x="377.19" y="148.844" size="1.778" layer="95"/>
 </segment>
 <segment>
 <wire x1="414.02" y1="60.96" x2="414.02" y2="91.44" width="0.1524" layer="91"/>
@@ -17105,6 +17106,7 @@ http://avoccado.cc</text>
 <segment>
 <wire x1="464.82" y1="58.42" x2="464.82" y2="88.9" width="0.1524" layer="91"/>
 <pinref part="TP4" gate="G$1" pin="TP"/>
+<label x="464.82" y="88.9" size="1.778" layer="95" rot="R270"/>
 </segment>
 <segment>
 <pinref part="JP22" gate="G$1" pin="SHIELD"/>
@@ -17120,7 +17122,7 @@ http://avoccado.cc</text>
 </net>
 <net name="AREF" class="0">
 <segment>
-<wire x1="167.64" y1="139.7" x2="149.86" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="139.7" x2="134.62" y2="139.7" width="0.1524" layer="91"/>
 <label x="157.48" y="139.7" size="1.778" layer="95"/>
 <pinref part="C1" gate="G$1" pin="2"/>
 <pinref part="MCU" gate="U$1" pin="AREF"/>
@@ -17287,6 +17289,7 @@ http://avoccado.cc</text>
 <segment>
 <wire x1="377.19" y1="151.638" x2="321.31" y2="151.638" width="0.1524" layer="91"/>
 <pinref part="JP4" gate="G$1" pin="1"/>
+<label x="377.444" y="151.892" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="P+5" gate="G$1" pin="3.3V"/>
