@@ -672,10 +672,6 @@ High-power, low thermal resistance package.</description>
 <wire x1="1.4224" y1="-0.6604" x2="-1.4224" y2="-0.6604" width="0.1524" layer="51"/>
 <wire x1="-1.4224" y1="-0.6604" x2="-1.4224" y2="0.6604" width="0.1524" layer="51"/>
 <wire x1="-1.4224" y1="0.6604" x2="1.4224" y2="0.6604" width="0.1524" layer="51"/>
-<wire x1="-0.8" y1="0.7" x2="-1.4" y2="0.7" width="0.2032" layer="21"/>
-<wire x1="-1.4" y1="0.7" x2="-1.4" y2="-0.1" width="0.2032" layer="21"/>
-<wire x1="0.8" y1="0.7" x2="1.4" y2="0.7" width="0.2032" layer="21"/>
-<wire x1="1.4" y1="0.7" x2="1.4" y2="-0.1" width="0.2032" layer="21"/>
 <smd name="1" x="-0.95" y="-1" dx="0.8" dy="0.9" layer="1"/>
 <smd name="2" x="0.95" y="-1" dx="0.8" dy="0.9" layer="1"/>
 <smd name="3" x="0" y="1.1" dx="0.8" dy="0.9" layer="1"/>
@@ -9736,7 +9732,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 </package>
 <package name="TP20R">
 <description>&lt;b&gt;TEST PAD&lt;/b&gt;</description>
-<smd name="TP" x="0" y="0" dx="2" dy="2" layer="1" roundness="100" cream="no"/>
+<smd name="TP" x="0" y="0" dx="1.8" dy="1.8" layer="1" roundness="100" cream="no"/>
 <text x="-1" y="1.05" size="1.27" layer="25">&gt;NAME</text>
 <text x="0" y="-2.54" size="1" layer="37">&gt;TP_SIGNAL_NAME</text>
 </package>
@@ -14087,11 +14083,16 @@ Various fiducial points for machine vision alignment.</description>
 <part name="C2" library="resistor" deviceset="C-EU" device="C0402K" value="0.1uF"/>
 <part name="GND17" library="SparkFun" deviceset="GND" device=""/>
 <part name="P+5" library="SparkFun" deviceset="3.3V" device="" value="VCC"/>
+<part name="TP1" library="testpad" deviceset="TP" device="TP20R"/>
+<part name="TP2" library="testpad" deviceset="TP" device="TP20R"/>
+<part name="TP6" library="testpad" deviceset="TP" device="TP20R"/>
+<part name="TP7" library="testpad" deviceset="TP" device="TP20R"/>
+<part name="TP8" library="testpad" deviceset="TP" device="TP20R"/>
 </parts>
 <sheets>
 <sheet>
 <plain>
-<text x="650.24" y="96.52" size="1.778" layer="91" rot="R180">NRF24L01+ board header SPI (IRQ at ADC7 / A7)</text>
+<text x="650.24" y="96.52" size="1.778" layer="91" rot="R180">NRF24L01+ board header SPI (IRQ NC)</text>
 <text x="175.26" y="162.56" size="1.778" layer="91">AtMega 328p</text>
 <text x="193.04" y="386.08" size="1.778" layer="91">LiPo 1c charge IC</text>
 <text x="7.62" y="309.88" size="1.778" layer="91" rot="R90">voltage divider to sense battery voltage / state of charge</text>
@@ -14219,6 +14220,11 @@ http://avoccado.cc</text>
 <instance part="P+5" gate="G$1" x="337.82" y="332.74" smashed="yes">
 <attribute name="VALUE" x="334.264" y="336.296" size="1.778" layer="96"/>
 </instance>
+<instance part="TP1" gate="G$1" x="431.8" y="63.5" rot="R180"/>
+<instance part="TP2" gate="G$1" x="472.44" y="170.18"/>
+<instance part="TP6" gate="G$1" x="480.06" y="170.18"/>
+<instance part="TP7" gate="G$1" x="457.2" y="170.18"/>
+<instance part="TP8" gate="G$1" x="330.2" y="63.5" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -14420,6 +14426,11 @@ http://avoccado.cc</text>
 <pinref part="R2" gate="G$1" pin="1"/>
 <pinref part="U3" gate="U$1" pin="PC6(/RESET)"/>
 </segment>
+<segment>
+<wire x1="457.2" y1="167.64" x2="457.2" y2="142.24" width="0.1524" layer="91"/>
+<label x="457.2" y="142.24" size="1.778" layer="95" rot="R90"/>
+<pinref part="TP7" gate="G$1" pin="TP"/>
+</segment>
 </net>
 <net name="SCK" class="0">
 <segment>
@@ -14466,6 +14477,7 @@ http://avoccado.cc</text>
 <segment>
 <wire x1="480.06" y1="142.24" x2="480.06" y2="167.64" width="0.1524" layer="91"/>
 <label x="480.06" y="142.24" size="1.778" layer="95" rot="R90"/>
+<pinref part="TP6" gate="G$1" pin="TP"/>
 </segment>
 </net>
 <net name="3.3V" class="0">
@@ -14637,6 +14649,7 @@ http://avoccado.cc</text>
 <segment>
 <wire x1="330.2" y1="101.6" x2="330.2" y2="66.04" width="0.1524" layer="91"/>
 <label x="330.2" y="101.6" size="1.778" layer="95" rot="R270"/>
+<pinref part="TP8" gate="G$1" pin="TP"/>
 </segment>
 </net>
 <net name="A0" class="0">
@@ -14742,6 +14755,7 @@ http://avoccado.cc</text>
 <segment>
 <wire x1="472.44" y1="142.24" x2="472.44" y2="167.64" width="0.1524" layer="91"/>
 <label x="472.44" y="142.24" size="1.778" layer="95" rot="R90"/>
+<pinref part="TP2" gate="G$1" pin="TP"/>
 </segment>
 </net>
 <net name="CHG-PROG" class="0">
@@ -14800,6 +14814,7 @@ http://avoccado.cc</text>
 <segment>
 <label x="431.8" y="91.44" size="1.778" layer="95" rot="R270"/>
 <wire x1="431.8" y1="66.04" x2="431.8" y2="91.44" width="0.2032" layer="91"/>
+<pinref part="TP1" gate="G$1" pin="TP"/>
 </segment>
 </net>
 <net name="VBAT" class="1">
@@ -14844,11 +14859,6 @@ http://avoccado.cc</text>
 <wire x1="215.9" y1="137.16" x2="226.06" y2="137.16" width="0.1524" layer="91"/>
 <label x="218.44" y="137.16" size="1.778" layer="95"/>
 <pinref part="U3" gate="U$1" pin="ADC7"/>
-</segment>
-<segment>
-<wire x1="647.7" y1="137.16" x2="629.92" y2="137.16" width="0.1524" layer="91"/>
-<pinref part="JP29" gate="G$1" pin="2"/>
-<label x="647.7" y="137.16" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="LED" class="0">
