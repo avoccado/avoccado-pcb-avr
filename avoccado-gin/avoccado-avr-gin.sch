@@ -14088,6 +14088,7 @@ Various fiducial points for machine vision alignment.</description>
 <part name="TP6" library="testpad" deviceset="TP" device="TP20R"/>
 <part name="TP7" library="testpad" deviceset="TP" device="TP20R"/>
 <part name="TP8" library="testpad" deviceset="TP" device="TP20R"/>
+<part name="TP9" library="testpad" deviceset="TP" device="TP20R"/>
 </parts>
 <sheets>
 <sheet>
@@ -14225,6 +14226,7 @@ http://avoccado.cc</text>
 <instance part="TP6" gate="G$1" x="480.06" y="170.18"/>
 <instance part="TP7" gate="G$1" x="457.2" y="170.18"/>
 <instance part="TP8" gate="G$1" x="330.2" y="63.5" rot="R180"/>
+<instance part="TP9" gate="G$1" x="401.32" y="58.42" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -14555,6 +14557,11 @@ http://avoccado.cc</text>
 <segment>
 <pinref part="C2" gate="G$1" pin="2"/>
 <pinref part="P+5" gate="G$1" pin="3.3V"/>
+</segment>
+<segment>
+<wire x1="401.32" y1="91.44" x2="401.32" y2="60.96" width="0.1524" layer="91"/>
+<pinref part="TP9" gate="G$1" pin="TP"/>
+<label x="401.32" y="91.44" size="1.778" layer="95" rot="R270"/>
 </segment>
 </net>
 <net name="D9" class="0">
