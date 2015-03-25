@@ -9732,7 +9732,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 </package>
 <package name="TP20R">
 <description>&lt;b&gt;TEST PAD&lt;/b&gt;</description>
-<smd name="TP" x="0" y="0" dx="1.8" dy="1.8" layer="1" roundness="100" cream="no"/>
+<smd name="TP" x="0" y="0" dx="1.7" dy="1.7" layer="1" roundness="100" cream="no"/>
 <text x="-1" y="1.05" size="1.27" layer="25">&gt;NAME</text>
 <text x="0" y="-2.54" size="1" layer="37">&gt;TP_SIGNAL_NAME</text>
 </package>
@@ -14060,7 +14060,6 @@ Various fiducial points for machine vision alignment.</description>
 <part name="P+4" library="SparkFun" deviceset="3.3V" device="" value="3V3"/>
 <part name="TP10" library="testpad" deviceset="TP" device="TP20R"/>
 <part name="TP12" library="testpad" deviceset="TP" device="TP20R"/>
-<part name="TP13" library="testpad" deviceset="TP" device="TP20R"/>
 <part name="TP4" library="testpad" deviceset="TP" device="TP20R"/>
 <part name="FRAME2" library="frames" deviceset="LETTER_L" device=""/>
 <part name="FRAME3" library="frames" deviceset="LETTER_L" device=""/>
@@ -14076,7 +14075,6 @@ Various fiducial points for machine vision alignment.</description>
 <part name="FID4" library="SparkFun-Aesthetics" deviceset="FIDUCIAL" device="UFIDUCIAL"/>
 <part name="FID5" library="SparkFun-Aesthetics" deviceset="FIDUCIAL" device="UFIDUCIAL"/>
 <part name="FID6" library="SparkFun-Aesthetics" deviceset="FIDUCIAL" device="UFIDUCIAL"/>
-<part name="FID7" library="SparkFun-Aesthetics" deviceset="FIDUCIAL" device="UFIDUCIAL"/>
 <part name="FID8" library="SparkFun-Aesthetics" deviceset="FIDUCIAL" device="UFIDUCIAL"/>
 <part name="FID9" library="SparkFun-Aesthetics" deviceset="FIDUCIAL" device="UFIDUCIAL"/>
 <part name="U3" library="SparkFun-DigitalIC" deviceset="ATMEGA328P_MLF" device="MLF32"/>
@@ -14089,6 +14087,11 @@ Various fiducial points for machine vision alignment.</description>
 <part name="TP7" library="testpad" deviceset="TP" device="TP20R"/>
 <part name="TP8" library="testpad" deviceset="TP" device="TP20R"/>
 <part name="TP9" library="testpad" deviceset="TP" device="TP20R"/>
+<part name="TP11" library="testpad" deviceset="TP" device="TP20R"/>
+<part name="TP14" library="testpad" deviceset="TP" device="TP20R"/>
+<part name="TP15" library="testpad" deviceset="TP" device="TP20R"/>
+<part name="TP16" library="testpad" deviceset="TP" device="TP20R"/>
+<part name="TP17" library="testpad" deviceset="TP" device="TP20R"/>
 </parts>
 <sheets>
 <sheet>
@@ -14188,7 +14191,6 @@ http://avoccado.cc</text>
 <instance part="P+4" gate="G$1" x="467.36" y="375.92"/>
 <instance part="TP10" gate="G$1" x="421.64" y="58.42" rot="R180"/>
 <instance part="TP12" gate="G$1" x="414.02" y="58.42" rot="R180"/>
-<instance part="TP13" gate="G$1" x="480.06" y="55.88" rot="R180"/>
 <instance part="TP4" gate="G$1" x="464.82" y="55.88" rot="R180"/>
 <instance part="FRAME2" gate="G$1" x="0" y="226.06"/>
 <instance part="FRAME2" gate="G$2" x="147.32" y="226.06"/>
@@ -14209,7 +14211,6 @@ http://avoccado.cc</text>
 <instance part="FID4" gate="G$1" x="635" y="246.38"/>
 <instance part="FID5" gate="G$1" x="642.62" y="246.38"/>
 <instance part="FID6" gate="G$1" x="612.14" y="241.3"/>
-<instance part="FID7" gate="G$1" x="619.76" y="241.3"/>
 <instance part="FID8" gate="G$1" x="627.38" y="241.3"/>
 <instance part="FID9" gate="G$1" x="635" y="241.3"/>
 <instance part="U3" gate="U$1" x="190.5" y="129.54"/>
@@ -14227,6 +14228,11 @@ http://avoccado.cc</text>
 <instance part="TP7" gate="G$1" x="457.2" y="170.18"/>
 <instance part="TP8" gate="G$1" x="330.2" y="63.5" rot="R180"/>
 <instance part="TP9" gate="G$1" x="401.32" y="58.42" rot="R180"/>
+<instance part="TP11" gate="G$1" x="373.38" y="63.5" rot="R180"/>
+<instance part="TP14" gate="G$1" x="381" y="63.5" rot="R180"/>
+<instance part="TP15" gate="G$1" x="368.3" y="63.5" rot="R180"/>
+<instance part="TP16" gate="G$1" x="358.14" y="63.5" rot="R180"/>
+<instance part="TP17" gate="G$1" x="454.66" y="55.88" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -14396,11 +14402,6 @@ http://avoccado.cc</text>
 <label x="414.02" y="91.44" size="1.778" layer="95" rot="R270"/>
 </segment>
 <segment>
-<wire x1="464.82" y1="58.42" x2="464.82" y2="88.9" width="0.1524" layer="91"/>
-<pinref part="TP4" gate="G$1" pin="TP"/>
-<label x="464.82" y="88.9" size="1.778" layer="95" rot="R270"/>
-</segment>
-<segment>
 <pinref part="JP22" gate="G$1" pin="SHIELD"/>
 <pinref part="GND16" gate="1" pin="GND"/>
 <wire x1="48.26" y1="360.68" x2="43.18" y2="360.68" width="0.1524" layer="91"/>
@@ -14410,6 +14411,16 @@ http://avoccado.cc</text>
 <wire x1="337.82" y1="320.04" x2="337.82" y2="325.12" width="0.1524" layer="91"/>
 <pinref part="C2" gate="G$1" pin="1"/>
 <pinref part="GND17" gate="1" pin="GND"/>
+</segment>
+<segment>
+<wire x1="358.14" y1="66.04" x2="358.14" y2="96.52" width="0.1524" layer="91"/>
+<pinref part="TP16" gate="G$1" pin="TP"/>
+<label x="358.14" y="96.52" size="1.778" layer="95" rot="R270"/>
+</segment>
+<segment>
+<wire x1="454.66" y1="58.42" x2="454.66" y2="88.9" width="0.1524" layer="91"/>
+<pinref part="TP17" gate="G$1" pin="TP"/>
+<label x="454.66" y="88.9" size="1.778" layer="95" rot="R270"/>
 </segment>
 </net>
 <net name="AREF" class="0">
@@ -14550,11 +14561,6 @@ http://avoccado.cc</text>
 <pinref part="P+4" gate="G$1" pin="3.3V"/>
 </segment>
 <segment>
-<wire x1="480.06" y1="88.9" x2="480.06" y2="58.42" width="0.1524" layer="91"/>
-<pinref part="TP13" gate="G$1" pin="TP"/>
-<label x="480.06" y="88.9" size="1.778" layer="95" rot="R270"/>
-</segment>
-<segment>
 <pinref part="C2" gate="G$1" pin="2"/>
 <pinref part="P+5" gate="G$1" pin="3.3V"/>
 </segment>
@@ -14581,6 +14587,10 @@ http://avoccado.cc</text>
 <wire x1="215.9" y1="109.22" x2="233.68" y2="109.22" width="0.1524" layer="91"/>
 <label x="218.44" y="109.22" size="1.778" layer="95"/>
 <pinref part="U3" gate="U$1" pin="PB0(ICP)"/>
+</segment>
+<segment>
+<wire x1="373.38" y1="66.04" x2="373.38" y2="99.06" width="0.1524" layer="91"/>
+<pinref part="TP11" gate="G$1" pin="TP"/>
 </segment>
 </net>
 <net name="A5" class="0">
@@ -14712,6 +14722,10 @@ http://avoccado.cc</text>
 <label x="218.44" y="119.38" size="1.778" layer="95"/>
 <pinref part="U3" gate="U$1" pin="PD5(T1)"/>
 </segment>
+<segment>
+<wire x1="368.3" y1="66.04" x2="368.3" y2="99.06" width="0.1524" layer="91"/>
+<pinref part="TP15" gate="G$1" pin="TP"/>
+</segment>
 </net>
 <net name="D6" class="0">
 <segment>
@@ -14725,6 +14739,10 @@ http://avoccado.cc</text>
 <wire x1="215.9" y1="114.3" x2="233.68" y2="114.3" width="0.1524" layer="91"/>
 <label x="218.44" y="114.3" size="1.778" layer="95"/>
 <pinref part="U3" gate="U$1" pin="PD7(AIN1)"/>
+</segment>
+<segment>
+<wire x1="381" y1="66.04" x2="381" y2="99.06" width="0.1524" layer="91"/>
+<pinref part="TP14" gate="G$1" pin="TP"/>
 </segment>
 </net>
 <net name="D10" class="0">
@@ -14852,6 +14870,10 @@ http://avoccado.cc</text>
 <wire x1="421.64" y1="60.96" x2="421.64" y2="91.44" width="0.1524" layer="91"/>
 <pinref part="TP10" gate="G$1" pin="TP"/>
 <label x="421.64" y="91.44" size="1.778" layer="95" rot="R270"/>
+</segment>
+<segment>
+<wire x1="464.82" y1="58.42" x2="464.82" y2="88.9" width="0.1524" layer="91"/>
+<pinref part="TP4" gate="G$1" pin="TP"/>
 </segment>
 </net>
 <net name="A6" class="0">
