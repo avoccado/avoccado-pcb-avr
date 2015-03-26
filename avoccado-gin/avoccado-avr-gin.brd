@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.02" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="47" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -206,7 +206,6 @@
 <circle x="0.4826" y="12.9286" radius="0.254" width="0.6096" layer="30"/>
 <text x="10.4906" y="11.5697" size="1.3081" layer="22" ratio="12" rot="MR180" align="top-left">OCC DO GIN</text>
 <rectangle x1="16.6116" y1="5.4356" x2="20.4216" y2="9.2456" layer="41"/>
-<wire x1="7.7216" y1="10.5156" x2="7.4676" y2="10.7696" width="0.2032" layer="22"/>
 <polygon width="0.05" layer="22">
 <vertex x="5.5056" y="0.7246"/>
 <vertex x="19.0296" y="6.2326"/>
@@ -224,6 +223,24 @@
 <wire x1="24.7396" y1="11.6586" x2="24.2316" y2="12.8016" width="0.1524" layer="22"/>
 <wire x1="24.2316" y1="12.8016" x2="23.7236" y2="11.6586" width="0.1524" layer="22"/>
 <circle x="14.7066" y="12.9286" radius="0.127" width="0.1524" layer="22"/>
+<text x="38.4306" y="11.0617" size="1.3081" layer="22" ratio="12" rot="MR180" align="top-left">OCC DO GIN</text>
+<polygon width="0.05" layer="22">
+<vertex x="33.4456" y="0.2166"/>
+<vertex x="46.9696" y="5.7246"/>
+<vertex x="46.9696" y="7.2086"/>
+<vertex x="33.4456" y="12.7166"/>
+<vertex x="33.4456" y="10.7166"/>
+<vertex x="44.1956" y="6.4666"/>
+<vertex x="33.4456" y="2.2166"/>
+</polygon>
+<circle x="45.300528125" y="2.3667625" radius="1.27" width="1.27" layer="22"/>
+<wire x1="46.5836" y1="11.1506" x2="46.0756" y2="12.2936" width="0.1524" layer="22"/>
+<wire x1="46.0756" y1="12.2936" x2="45.5676" y2="11.1506" width="0.1524" layer="22"/>
+<wire x1="50.3936" y1="12.2936" x2="50.9016" y2="11.1506" width="0.1524" layer="22"/>
+<wire x1="50.9016" y1="11.1506" x2="51.4096" y2="12.2936" width="0.1524" layer="22"/>
+<wire x1="52.6796" y1="11.1506" x2="52.1716" y2="12.2936" width="0.1524" layer="22"/>
+<wire x1="52.1716" y1="12.2936" x2="51.6636" y2="11.1506" width="0.1524" layer="22"/>
+<circle x="42.6466" y="12.4206" radius="0.127" width="0.1524" layer="22"/>
 </plain>
 <libraries>
 <library name="SparkFun">
