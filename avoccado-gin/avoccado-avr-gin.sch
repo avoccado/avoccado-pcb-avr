@@ -10304,9 +10304,9 @@ Various fiducial points for machine vision alignment.</description>
 <classes>
 <class number="0" name="default" width="0" drill="0">
 </class>
-<class number="1" name="vcc" width="0.2032" drill="0">
+<class number="1" name="vcc" width="0.1524" drill="0">
 </class>
-<class number="3" name="usbvcc" width="0.2032" drill="0.6096">
+<class number="3" name="usbvcc" width="0.1524" drill="0.6096">
 <clearance class="3" value="0.1524"/>
 </class>
 </classes>
@@ -11240,10 +11240,6 @@ http://avoccado.cc</text>
 </nets>
 </sheet>
 </sheets>
-<errors>
-<approved hash="106,1,215.9,127,D2,,,,,"/>
-<approved hash="115,1,119.38,154.94,DTR,,,,,"/>
-</errors>
 </schematic>
 </drawing>
 <compatibility>
