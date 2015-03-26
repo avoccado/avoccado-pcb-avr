@@ -10311,7 +10311,7 @@ Various fiducial points for machine vision alignment.</description>
 </class>
 </classes>
 <parts>
-<part name="C10" library="rcl" deviceset="C-EU" device="C0603" value="0.1uF"/>
+<part name="C10" library="rcl" deviceset="C-EU" device="C0603" value="4.7uF"/>
 <part name="FRAME1" library="SparkFun" deviceset="FRAME-LETTER" device=""/>
 <part name="GND25" library="SparkFun" deviceset="GND" device=""/>
 <part name="GND26" library="SparkFun" deviceset="GND" device=""/>
@@ -10329,7 +10329,7 @@ Various fiducial points for machine vision alignment.</description>
 <part name="GND4" library="SparkFun" deviceset="GND" device=""/>
 <part name="P+1" library="SparkFun" deviceset="3.3V" device="" value="3V3"/>
 <part name="GND5" library="SparkFun" deviceset="GND" device=""/>
-<part name="Q2" library="SparkFun-DiscreteSemi" deviceset="MOSFET-NCHANNEL" device="BSS123LT1G" value="FET"/>
+<part name="Q2" library="SparkFun-DiscreteSemi" deviceset="MOSFET-NCHANNEL" device="BSS123LT1G" value="N-FET"/>
 <part name="R1" library="SparkFun-Resistors" deviceset="RESISTOR" device="0603" value="511R"/>
 <part name="LDO" library="linear" deviceset="MCP1703" device="CB"/>
 <part name="U2" library="SparkFun" deviceset="MCP73831" device=""/>
