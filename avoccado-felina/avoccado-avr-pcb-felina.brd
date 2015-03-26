@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.02" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
+<grid distance="0.5" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="47" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -149,9 +149,6 @@
 <board>
 <description>Avoccado PCB AVR</description>
 <plain>
-<wire x1="5.787" y1="7.51" x2="4.723" y2="7.51" width="0.127" layer="21"/>
-<wire x1="4.723" y1="7.51" x2="4.215" y2="8.018" width="0.127" layer="21"/>
-<wire x1="4.215" y1="8.018" x2="4.215" y2="9.042" width="0.127" layer="21"/>
 <text x="36.560371875" y="6.393159375" size="1.778" layer="22" font="vector" ratio="15" rot="MR0" align="top-left">-</text>
 <text x="14.248" y="9.699" size="1.27" layer="22" ratio="15" rot="SMR0" align="center-left">RS</text>
 <text x="14.248" y="11.25" size="1.27" layer="22" ratio="15" rot="SMR0" align="center-left">MO</text>
@@ -179,10 +176,9 @@
 <rectangle x1="13.613" y1="6.74" x2="21.741" y2="14.868" layer="41"/>
 <text x="34.018759375" y="6.433603125" size="1.778" layer="22" font="vector" ratio="15" rot="MR0" align="top-left">+</text>
 <text x="39.361" y="14.868" size="1.016" layer="22" ratio="15" rot="SMR0" align="top-left">VC</text>
-<text x="2.491" y="7.718" size="1.0668" layer="21" ratio="15" rot="R90" align="top-left">FELINA</text>
-<wire x1="1.5" y1="14.787" x2="1.5" y2="5.787" width="1" layer="46"/>
-<wire x1="1.5" y1="2.5" x2="1.5" y2="1.5" width="1" layer="46"/>
-<wire x1="1.5" y1="1.5" x2="45.5" y2="1.5" width="1" layer="46"/>
+<wire x1="3" y1="16.25" x2="3" y2="4" width="1" layer="46"/>
+<wire x1="3" y1="2.5" x2="3" y2="1.5" width="1" layer="46"/>
+<wire x1="3" y1="1.5" x2="45.5" y2="1.5" width="1" layer="46"/>
 <wire x1="45.5" y1="1.5" x2="45.5" y2="2.5" width="1" layer="46"/>
 <text x="41.901" y="14.868" size="1.016" layer="22" ratio="15" rot="SMR0" align="top-left">5V</text>
 <circle x="25.805" y="16.392" radius="1.143" width="0.3683" layer="21"/>
@@ -193,13 +189,11 @@
 <rectangle x1="27.837" y1="11.312" x2="29.869" y2="13.852" layer="41"/>
 <circle x="44.474" y="17.789" radius="0.254" width="0.6096" layer="29"/>
 <circle x="7.263" y="4.2" radius="0.254" width="0.6096" layer="29"/>
-<circle x="2.818" y="17.789" radius="0.254" width="0.6096" layer="29"/>
-<hole x="1.5" y="5" drill="3"/>
-<hole x="1.5" y="15.5" drill="3"/>
+<circle x="4.088" y="17.789" radius="0.254" width="0.6096" layer="29"/>
 <wire x1="45.5" y1="18" x2="45.5" y2="19" width="1" layer="46"/>
-<wire x1="45.5" y1="19" x2="1.5" y2="19" width="1" layer="46"/>
-<wire x1="1.5" y1="19" x2="1.5" y2="18" width="1" layer="46"/>
-<wire x1="45.5" y1="4.75" x2="45.5" y2="15.75" width="1" layer="46"/>
+<wire x1="45.5" y1="19" x2="3" y2="19" width="1" layer="46"/>
+<wire x1="3" y1="19" x2="3" y2="18" width="1" layer="46"/>
+<wire x1="45.5" y1="4" x2="45.5" y2="16.25" width="1" layer="46"/>
 <wire x1="11.454" y1="15.724" x2="11.962" y2="15.216" width="0.254" layer="22"/>
 <wire x1="11.454" y1="13.184" x2="11.962" y2="12.676" width="0.254" layer="22"/>
 <text x="14.248" y="8.175" size="1.27" layer="22" ratio="15" rot="SMR0" align="center-left">VC</text>
@@ -248,25 +242,10 @@
 <wire x1="34.568" y1="7.883" x2="34.822" y2="7.883" width="0.1524" layer="22"/>
 <wire x1="34.822" y1="7.883" x2="34.822" y2="7.756" width="0.1524" layer="22"/>
 <circle x="15.645" y="6.24" radius="1.1" width="0.2032" layer="22"/>
-<circle x="2.818" y="2.803" radius="0.254" width="0.6096" layer="29"/>
 <circle x="37.997" y="2.93" radius="0.254" width="0.6096" layer="29"/>
-<circle x="2.818" y="17.789" radius="0.254" width="0.6096" layer="30"/>
-<circle x="2.818" y="2.803" radius="0.254" width="0.6096" layer="30"/>
+<circle x="4.088" y="17.789" radius="0.254" width="0.6096" layer="30"/>
 <circle x="37.997" y="2.93" radius="0.254" width="0.6096" layer="30"/>
 <circle x="44.474" y="17.789" radius="0.254" width="0.6096" layer="30"/>
-<hole x="46.5" y="15.5" drill="3"/>
-<hole x="46.5" y="5" drill="3"/>
-<text x="4.209" y="5.318" size="1.0668" layer="22" ratio="15" rot="MR90" align="top-left">AVOCCADO.CC</text>
-<polygon width="0.05" layer="22">
-<vertex x="29.5" y="3"/>
-<vertex x="24.5" y="15"/>
-<vertex x="22" y="15"/>
-<vertex x="17" y="3"/>
-<vertex x="19" y="3"/>
-<vertex x="23.25" y="13.75"/>
-<vertex x="27.5" y="3"/>
-</polygon>
-<circle x="20.008" y="15.008" radius="0.9" width="0.8128" layer="22"/>
 <circle x="8.025" y="3.7" radius="0.762" width="0.2" layer="22"/>
 <circle x="25.805" y="16.4" radius="1.0668" width="0.2" layer="22"/>
 <circle x="30.885" y="11.828" radius="1.1" width="0.2032" layer="22"/>
@@ -284,6 +263,24 @@
 <wire x1="18.034" y1="14.986" x2="18.034" y2="12.7" width="0.254" layer="22"/>
 <wire x1="16.51" y1="14.986" x2="16.51" y2="12.7" width="0.254" layer="22"/>
 <text x="19.496" y="12.872" size="1.27" layer="22" ratio="15" rot="SMR0" align="center-left">G</text>
+<text x="4.1783" y="15.2527" size="1.3081" layer="21" ratio="12" rot="R270" align="top-left">OCC DO</text>
+<polygon width="0.05" layer="22">
+<vertex x="16.2186" y="3.9816"/>
+<vertex x="21.7266" y="17.5056"/>
+<vertex x="23.2106" y="17.5056"/>
+<vertex x="28.7186" y="3.9816"/>
+<vertex x="26.7186" y="3.9816"/>
+<vertex x="22.4686" y="14.7316"/>
+<vertex x="18.2186" y="3.9816"/>
+</polygon>
+<circle x="18.3687625" y="15.836528125" radius="1.27" width="1.27" layer="22"/>
+<wire x1="4.0894" y1="11.5824" x2="2.9464" y2="12.0904" width="0.1524" layer="21"/>
+<wire x1="2.9464" y1="12.0904" x2="4.0894" y2="12.5984" width="0.1524" layer="21"/>
+<wire x1="2.9464" y1="7.7724" x2="4.0894" y2="7.2644" width="0.1524" layer="21"/>
+<wire x1="4.0894" y1="7.2644" x2="2.9464" y2="6.7564" width="0.1524" layer="21"/>
+<wire x1="4.0894" y1="5.4864" x2="2.9464" y2="5.9944" width="0.1524" layer="21"/>
+<wire x1="2.9464" y1="5.9944" x2="4.0894" y2="6.5024" width="0.1524" layer="21"/>
+<circle x="2.8194" y="15.2654" radius="0.127" width="0.1524" layer="21"/>
 </plain>
 <libraries>
 <library name="SparkFun">
@@ -3293,7 +3290,7 @@ design rules under a new name.</description>
 </element>
 <element name="FID2" library="SparkFun-Aesthetics" package="MICRO-FIDUCIAL" value="FIDUCIALUFIDUCIAL" x="44.474" y="17.789"/>
 <element name="LOGO1" library="SparkFun-Aesthetics" package="OSHW-LOGO-S" value="OSHW-LOGOS" x="17.677" y="10.804"/>
-<element name="FID1" library="SparkFun-Aesthetics" package="MICRO-FIDUCIAL" value="FIDUCIALUFIDUCIAL" x="2.818" y="17.789"/>
+<element name="FID1" library="SparkFun-Aesthetics" package="MICRO-FIDUCIAL" value="FIDUCIALUFIDUCIAL" x="4.088" y="17.789"/>
 <element name="FID3" library="SparkFun-Aesthetics" package="MICRO-FIDUCIAL" value="FIDUCIALUFIDUCIAL" x="7.263" y="4.2"/>
 <element name="JP22" library="SparkFun-Connectors" package="USB-B-MICRO-SMD_V03" value="USB_MICROB_PLUGCONN-11752" x="42.926" y="8.35" smashed="yes" rot="MR0">
 <attribute name="PROD_ID" value="CONN-11752" x="42.926" y="8.35" size="1.778" layer="28" font="vector" ratio="15" rot="MR0" display="off"/>
@@ -3302,10 +3299,8 @@ design rules under a new name.</description>
 <element name="R9" library="rcl" package="R0402" value="2K" x="40.41" y="3.3618" smashed="yes">
 <attribute name="VALUE" x="41.299" y="4.1492" size="0.4064" layer="27" rot="R180"/>
 </element>
-<element name="FID4" library="SparkFun-Aesthetics" package="MICRO-FIDUCIAL" value="FIDUCIALUFIDUCIAL" x="2.818" y="2.803"/>
 <element name="FID5" library="SparkFun-Aesthetics" package="MICRO-FIDUCIAL" value="FIDUCIALUFIDUCIAL" x="37.997" y="2.93"/>
-<element name="FID6" library="SparkFun-Aesthetics" package="MICRO-FIDUCIAL" value="FIDUCIALUFIDUCIAL" x="2.818" y="2.803" rot="MR0"/>
-<element name="FID7" library="SparkFun-Aesthetics" package="MICRO-FIDUCIAL" value="FIDUCIALUFIDUCIAL" x="2.818" y="17.789" rot="MR0"/>
+<element name="FID7" library="SparkFun-Aesthetics" package="MICRO-FIDUCIAL" value="FIDUCIALUFIDUCIAL" x="4.088" y="17.789" rot="MR0"/>
 <element name="FID8" library="SparkFun-Aesthetics" package="MICRO-FIDUCIAL" value="FIDUCIALUFIDUCIAL" x="44.474" y="17.789" rot="MR0"/>
 <element name="FID9" library="SparkFun-Aesthetics" package="MICRO-FIDUCIAL" value="FIDUCIALUFIDUCIAL" x="37.997" y="2.93" rot="MR0"/>
 </elements>
