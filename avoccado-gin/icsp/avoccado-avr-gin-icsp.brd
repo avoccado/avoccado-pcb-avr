@@ -178,12 +178,14 @@
 <wire x1="-4" y1="-2" x2="26" y2="-2" width="1" layer="46"/>
 <wire x1="-4" y1="12.5" x2="-4" y2="11.5" width="1" layer="46"/>
 <wire x1="26" y1="12.5" x2="26" y2="11.5" width="1" layer="46"/>
-<wire x1="26" y1="9.5" x2="26" y2="-2" width="1" layer="46"/>
-<wire x1="-4" y1="-2" x2="-4" y2="9.5" width="1" layer="46"/>
+<wire x1="26" y1="-0.5" x2="26" y2="-2" width="1" layer="46"/>
+<wire x1="-4" y1="-2" x2="-4" y2="-0.5" width="1" layer="46"/>
 <hole x="-4" y="10" drill="3"/>
 <hole x="-4" y="0" drill="3"/>
 <hole x="26" y="10" drill="3"/>
 <hole x="26" y="0" drill="3"/>
+<wire x1="-4" y1="7" x2="-4" y2="3" width="1" layer="46"/>
+<wire x1="26" y1="7" x2="26" y2="3" width="1" layer="46"/>
 </plain>
 <libraries>
 <library name="SparkFun-Connectors">
