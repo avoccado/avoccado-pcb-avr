@@ -1,7 +1,7 @@
 Avoccado° PCB layouts and schematics
 ================
 
-**Most recent version: Avoccado° Faye**
+**Most recent version: Avoccado° Felina**
 
 This repository contains the source files of the PCBs for Avoccado° controllers equipped with AVR micro controllers.
 
@@ -12,7 +12,9 @@ There are different PCBs, some with more than one revision. Check the commit log
  - Yolandi: 8/8 mil, never tested
  - Nora 1: square board, about one square inch, IRQ from NRF24 routed to MCU
  - Nora 2: same as Nora 1 with IRQ from NRF24 and MPU6050 routed to MCU
- - Faye: updated Nora 2 with voltage divider to sense battery voltage and derive SOC (state of charge), added optional micro USB SMD socket on bottom side, optionally less part diversity count as R_charge-program can be set with two serialised 1K 0402 resistors. Faye has got an equal 100 mil grid for every pin header and test point.
+ - Faye: updated Nora 2 with voltage divider to sense battery voltage and derive SOC (state of charge), added optional micro USB SMD socket on bottom layer, optionally less part diversity count as R_charge-program can be set with two serialised 1K 0402 resistors. Faye has got an equal 100 mil grid for every pin header and test point.
+ - Felina: Features like Faye, without 0402 R_charge-program, non-square footprint, with MPU6050 QFN on board (optional), USB SMD on bottom layer
+ - Gin: Board layout smaller than one NRF24L01 PCB module, features AtMega328 QFN + MPU6050 QFN. Not possible to hand solder, very small overall footprint. USB connector only passive (for charging)
 
 Alpha 1 (A1):
 ----------------
@@ -49,6 +51,11 @@ Optional: V-USB components with 2K pullup on D- to enable USB firmware usage. (n
 Attention: V-USB uses same D2 IRQ line as MPU6050.
 Consistent 100 mil grid for all pin headers, additional test points, SMD pad for vibration motor output.
 
+Gin
+----------------
+![IMG board screenshot](avoccado-gin/avoccado-avr-gin-top.png)
+InvenSense MPU6050 QFN package, Atmel AtMega328p QFN package, very small overall footprint, smaller than a NRF24 module. No seperate ICSP header, flashing only via test points and the NRF24 connector. No DTR reset latch with capacitor.
+Consistent 100 mil grid for all headers and test points. 
 
 Panels 
 ----------------
