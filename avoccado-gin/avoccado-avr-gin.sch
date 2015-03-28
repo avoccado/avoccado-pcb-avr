@@ -2009,10 +2009,9 @@ Manufacturer: Hirose&lt;br&gt;&lt;br&gt;
 <wire x1="2.85" y1="3.9" x2="2.85" y2="-3.9" width="0.127" layer="49"/>
 <wire x1="2.85" y1="3.9" x2="-2.15" y2="3.9" width="0.127" layer="49"/>
 <wire x1="2.85" y1="-3.9" x2="-2.15" y2="-3.9" width="0.127" layer="49"/>
-<wire x1="2.981959375" y1="3.99288125" x2="2" y2="3.99288125" width="0.3048" layer="21"/>
-<wire x1="2" y1="3.99288125" x2="2" y2="4" width="0.3048" layer="21"/>
+<wire x1="2.981959375" y1="3.99288125" x2="2.6" y2="3.99288125" width="0.3048" layer="21"/>
 <wire x1="3" y1="4" x2="3" y2="3" width="0.3048" layer="21"/>
-<wire x1="2" y1="-4" x2="3" y2="-4" width="0.3048" layer="21"/>
+<wire x1="2.6" y1="-4" x2="3" y2="-4" width="0.3048" layer="21"/>
 <wire x1="3" y1="-4" x2="3" y2="-3" width="0.3048" layer="21"/>
 <wire x1="-1" y1="4" x2="-2" y2="4" width="0.3048" layer="21"/>
 <wire x1="-1" y1="-4" x2="-2" y2="-4" width="0.3048" layer="21"/>
@@ -10379,8 +10378,6 @@ Various fiducial points for machine vision alignment.</description>
 <part name="FRAME5" library="frames" deviceset="LETTER_L" device=""/>
 <part name="FRAME6" library="frames" deviceset="LETTER_L" device=""/>
 <part name="FID2" library="SparkFun-Aesthetics" deviceset="FIDUCIAL" device="UFIDUCIAL"/>
-<part name="FID1" library="SparkFun-Aesthetics" deviceset="FIDUCIAL" device="UFIDUCIAL"/>
-<part name="FID3" library="SparkFun-Aesthetics" deviceset="FIDUCIAL" device="UFIDUCIAL"/>
 <part name="JP22" library="SparkFun-Connectors" deviceset="USB_MICROB_PLUG" device="CONN-11752"/>
 <part name="GND16" library="SparkFun" deviceset="GND" device=""/>
 <part name="FID4" library="SparkFun-Aesthetics" deviceset="FIDUCIAL" device="UFIDUCIAL"/>
@@ -10514,8 +10511,6 @@ http://avoccado.cc</text>
 <instance part="FRAME6" gate="G$1" x="574.04" y="0"/>
 <instance part="FRAME6" gate="G$2" x="721.36" y="0"/>
 <instance part="FID2" gate="G$1" x="612.14" y="246.38"/>
-<instance part="FID1" gate="G$1" x="619.76" y="246.38"/>
-<instance part="FID3" gate="G$1" x="627.38" y="246.38"/>
 <instance part="JP22" gate="G$1" x="55.88" y="360.68" rot="R180"/>
 <instance part="GND16" gate="1" x="43.18" y="353.06"/>
 <instance part="FID4" gate="G$1" x="635" y="246.38"/>
